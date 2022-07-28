@@ -1,10 +1,173 @@
-/*
-  Код ниже нужно удалить, он добавлен просто для примера
-*/
 .footer {
-  background-color: #151515;
+  background: #434343;
+  color: #AAAAAA;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  margin: 0 auto;
+  margin-bottom: 100px;
+}
+
+.footer-list {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 83px 0 0 0;
+}
+
+.footer-list li {
+  margin-bottom: 15px;
+}
+
+.networks {
+  display: flex;
+}
+
+.networks li {
+  margin-top: 23px;
+  margin-right: 10px;
+}
+
+.footer nav,
+.footer form {
+  padding-top: 11px;
+}
+
+/*Rating*/
+
+.star {
+overflow: hidden;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+}
+.star:not(:checked) > input {
+display: none;
+}
+.star:not(:checked) > label {
+width: 20px;
+padding: 0;
+cursor: pointer;
+  color: #FFFFFF;
+}
+
+.star:not(:checked) > label:before {
+content: '★';
+}
+
+.star > input:checked ~ label,
+.star > input:checked ~ span {
+color: #C29974;
+}
+
+.star:not(:checked) > label:hover,
+.star:not(:checked) > label:hover ~ label,
+.star:not(:checked) > label:hover,
+.star:not(:checked) > label:hover ~ span {
+color: #C29974;
+}
+
+.star > input:checked + label:hover,
+.star > input:checked + label:hover ~ label,
+.star > input:checked ~ label:hover,
+.star > input:checked ~ label:hover ~ label,
+.star > label:hover ~ input:checked ~ label {
+color: #C29974;
+}
+
+.star > label:active {
+position: relative;
+}
+
+.star:focus-within p {
+  color: #C29974;
+}
+
+.line p {
+  border-bottom: 1px solid #666666;
+  width: 380px;
+  padding-bottom: 22px;
+}
+
+.down {
+  display: flex;
+  align-items: center;
+  border-top: 1px solid #666666;
+  padding: 6px 0 100px 0;
+}
+
+.star {
+  margin-right: 153px;
+  padding-top: 13px;
+}
+
+.down p {
+  margin-right: 109px;
+}
+
+
+.footer-color {
   color: #fff;
-  padding: 40px 0;
-  text-align: center;
-  height: 100px;
+  margin-right: 25px;
+}
+
+.footer-color a {
+  color: #fff;
+  width: 380px;
+}
+
+.down a {
+  color: #A2A2A2;
+  width: 380px;
+}
+
+.down a:hover,
+.down a:active {
+  text-decoration-line: underline;
+  color: #FFFFFF;
+}
+
+.email-wrapper {
+  display: flex;
+}
+
+.email {
+  background-color: #666666;
+  width: 300px;
+  height: 40px;
+  border: 1px solid #666666;
+  font-size: 16px;
+  line-height: 22px;
+  color: #EBEBEB;
+  padding: 9px 0px 9px 15px;
+}
+
+.email:hover,
+.email:active {
+  border: 1px solid #FFFDFD;
+}
+
+.email:focus {
+  border-color: #FFFDFD;
+}
+
+.email::-webkit-input-placeholder { 
+  color: #EBEBEB; 
+}
+
+.footer-color a:hover {
+  opacity: 50%;
+}
+
+.footer-color a:active {
+  opacity: 20%;
+}
+
+.networks a:hover {
+  opacity: 50%;
+}
+
+.networks a:active {
+  opacity: 20%;
 }

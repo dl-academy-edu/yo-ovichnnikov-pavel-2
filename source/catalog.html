@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalog</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&family=Montserrat:wght@200;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+    
+    @@include('blocks/header.html')
+
+    <main class="container">
+        <section>
+            <h1 class="catalog-title">Category Products</h1>
+                <div>
+                    <ul class="undotted crumbs">
+                        <li>
+                            <a href="index.html" class="breadcrumbs">Home</a>
+                        </li>
+                        <li>
+                            <p>Catalog</p>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <ul class="undotted category-list">
+                        
+                        @@include('blocks/category.html', {
+                            "link": "#",
+                            "img": "img/image1.png",
+                            "title": "APPAREL KIDS",
+                            "class": "img1"
+                        })
+                        
+                        @@include('blocks/category.html', {
+                            "link": "#",
+                            "img": "img/holidayshop.jpg",
+                            "title": "HOLIDAY SHOP",
+                            "class": "img2"
+                        })
+        
+                        @@include('blocks/category.html', {
+                            "link": "./toys.html",
+                            "img": "img/toys.jpg", 
+                            "title": "TOYS",
+                            "class": "img3"
+                        })
+
+                    </ul>
+                </div>
+                <div>
+                    <ul class="undotted category-list_2">
+        
+                        @@include('blocks/category.html', {
+                            "link": "#",
+                            "img": "img/accessories.jpg",
+                            "title": "ACCESSORIES",
+                            "class": "img4"
+                        })
+
+                        @@include('blocks/category.html', {
+                            "link": "#",
+                            "img": "img/accessories.jpg",
+                            "title": "SALE",
+                            "class": "img5"
+                        })
+
+                        @@include('blocks/category.html', {
+                            "link": "#",
+                            "img": "img/accessories.jpg",
+                            "title": "APPAREL ADULTS",
+                            "class": "img6"
+                        })
+
+                    </ul>
+                </div>
+                <div class="product">
+                    <h2 class="catalog-product">Product Description</h2>
+                    <p>Interactive doll Zapf Creation Baby Born Sister can drink from a bottle and almost really cry. You can even bathe her, just like a little sister.</p>
+                    <p>A toy with a height of 43 cm bends its knees, the head rotates, it can stand upright. Such a doll will be an excellent choice for a gift for a girl from 4 years old.</p>
+                    <p>The set includes a miniature set of fashionable clothes, a hairbrush, a bottle for water, a pair of hairpins and elastic bands for hair, as well as two bracelets: one for the doll, the other for her young mistress.</p> 
+                </div>
+        </section>
+    </main>
+
+    @@include('blocks/footer.html')
+
+</body>
+</html>

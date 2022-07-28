@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toys</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&family=Montserrat:wght@200;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+    @@include('blocks/header.html')
+
+    <main>
+        <section class="container">
+            <h1 class="toys-title">Toy for kids</h1>
+            <div>
+                <ul class="undotted crumbs">
+                    <li>
+                        <a href="index.html" class="breadcrumbs">Home</a>
+                    </li>
+                    <li>
+                        <a href="catalog.html" class="breadcrumbs">Catalog</a>
+                    </li>
+                    <li>
+                        <p>Toys</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <div class="toys-banner">
+            <form action="#" class="container">
+                <div class="toys-form"> 
+                    <div class="range">
+                        <label>Cost</label>
+                        <input type="range" max="500" value="100">
+                        <ul class="undotted cost-list">
+                            <li>
+                                <p>0</p>
+                            </li>
+                            <li>
+                                <p>500</p>
+                            </li>
+                        </ul>            
+                    </div>
+                    
+                    <fieldset class="toys-box-color">
+                        <legend>Color</legend>
+                        <ul class="undotted">
+                            <li>
+                                <input type="checkbox" id="inpul-black" class="checkbox-input" checked>
+                                <label for="inpul-black" class="checkbox-label">Black</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="inpul-blue" class="checkbox-input">
+                                <label for="inpul-blue" class="checkbox-label">Blue</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="inpul-green" class="checkbox-input">
+                                <label for="inpul-green" class="checkbox-label">Green</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="inpul-white" class="checkbox-input">
+                                <label for="inpul-white" class="checkbox-label">White</label>
+                            </li>
+                        </ul>
+                    </fieldset>
+
+                    <fieldset class="toys-box-delivery">
+                        <legend>Delivery</legend>
+                        <ul class="undotted">
+                            <li>
+                                <input type="radio" id="inpul-freeshipping" name="report" class="radio-input">
+                                <label for="inpul-freeshipping" class="radio-label">Free shipping</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="inpul-fastshipping" name="report" class="radio-input" checked>
+                                <label for="inpul-fastshipping" class="radio-label">Fast shipping</label>
+                            </li>
+                        </ul>
+                    </fieldset>
+
+                    <fieldset class="toys-box-amount">
+                        <legend>Amount</legend>
+                        <ul class="undotted toys-amount">
+                            <li>
+                                <input type="radio" id="inpul-0-5" name="report-amount" class="toys-input" checked>
+                                <label for="inpul-0-5" class="toys-label">0-5</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="inpul-10-20" name="report-amount" class="toys-input">
+                                <label for="inpul-10-20" class="toys-label">10-20</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="inpul-20-50" name="report-amount" class="toys-input">
+                                <label for="inpul-20-50" class="toys-label">20-50</label>
+                            </li>
+                        </ul>
+                    </fieldset>
+                    <button aria-label="apply" class="button" type="submit">Apply</button>
+                </div>
+            </form>
+        </div>
+            
+        <section class="container">
+            <div>
+                <ul class="undotted products">
+                    <li class="toys-item" data-tooltip="LEARN MORE">
+                        <a href="#">
+                            <img src="./img/toys/toys1.jpg" alt="" width="380" height="385">
+                            <h2>SHARKY BEAN BAG CHAIR COVER</h2>
+                            <p>$60.00 USD</p>
+                        </a>
+                    </li>
+                    <li class="toys-item" data-tooltip="LEARN MORE">
+                        <a href="#">
+                            <img src="./img/toys/toys2.jpg" alt="" width="380" height="385">
+                            <h2>BRASS DECO FRAMES</h2>
+                            <p>$66.00 USD</p>
+                        </a>
+                    </li>
+                    <li class="toys-item" data-tooltip="LEARN MORE">
+                        <a href="#">
+                            <img src="./img/toys/toys3.jpg" alt="" width="380" height="385">
+                            <h2>CIBO FULL APRON</h2>
+                            <p>$60.00 USD</p>
+                        </a>
+                    </li>
+                    <li class="toys-item" data-tooltip="LEARN MORE">
+                        <a href="#">
+                            <img src="./img/toys/toys4.jpg" alt="" width="380" height="385">
+                            <h2>GATCHA GATCHA GUMBALL MACHINE</h2>
+                            <p>$56.00 USD</p>
+                        </a>
+                    </li>
+                    <li class="toys-item" data-tooltip="LEARN MORE">
+                        <a href="#">
+                            <img src="./img/toys/toys5.jpg" alt="" width="380" height="385">
+                            <h2>CHRISTMAS ADVENT SCENTED CANDLE</h2>
+                            <p>$29.00 USD</p>
+                        </a>
+                    </li>
+                    <li class="toys-item" data-tooltip="LEARN MORE">
+                        <a href="#">
+                            <img src="./img/toys/toys6.jpg" alt="" width="380" height="382">
+                            <h2>TANGLE SPINNING TEA LIGHT</h2>
+                            <p>$56.00 USD</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="blog-page">
+                <a href="#" class="page-left"></a>
+                <div class="pagination">
+                    <a class="active" href="#">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">4</a>
+                </div>
+                <a href="#" class="page-right"></a>
+            </div>
+        </section>
+    </main>
+
+    @@include('blocks/footer.html')
+</body>
