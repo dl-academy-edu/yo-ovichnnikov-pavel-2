@@ -17,44 +17,803 @@
 */
 @import "_blocks/container";
 @import "_blocks/footer";
+@import "_blocks/header";
+@import "_blocks/category";
 
-/*
-  Ниже пример подключения других блоков
+/*BANNER*/
 
-  Каждый новый файл должен отвечать за конкретный блок в терминах БЭМ
-  (https://ru.bem.info/methodology/key-concepts/#%D0%B1%D0%BB%D0%BE%D0%BA)
+.banner {
+  background-color: #EEE4DB;
+  margin-top: 130px;
+}
 
-  Для именования селекторов давайте придерживаться стиля two dashes
-  (https://ru.bem.info/methodology/naming-convention/#%D1%81%D1%82%D0%B8%D0%BB%D1%8C-two-dashes)
-  block-name__element-name--modificator
-*/
+.banner-title {
+   font-family: 'Montserrat';
+   font-weight: 700;
+   font-size: 40px;
+   line-height: 110%;
+   color: #1E0606;
+   margin-bottom: 17px;
+   padding: 65px 0 0;
+   width: 80%;
+   position: relative;
+}
 
-/*
-  Код ниже нужно удалить, он добавлен просто для примера
-  Не стал выносить в отдельный файл, но если бы блок coming-soon действительно был бы нужен,
-  то он должен был бы быть в файле _blocks/coming-soon.scss
-*/
+.banner-title::after {
+   content: '';
+   position: absolute;
+   width: 635px;
+   height: 461px;
+   background-image: url('../img/krocozybra.png');
+   top: -117px;
+   left: 312px;
+}
 
-.coming-soon {
-  color: $color-text;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  min-height: calc(100vh - 100px);
-  margin: auto;
-  padding: 0 5vw;
+.banner-list{
+   display: flex;
+   /* justify-content: space-between; */
+}
 
-  &__title {
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    justify-content: space-between;
-    font-size: 25vw;
-    font-weight: 400;
-    margin: 0 auto;
-    text-transform: uppercase;
-    width: 100%;
-  }
+.banner-item {
+   margin: 0;
+}
+
+.banner-item a {
+   margin-bottom: 88px;
+}
+
+.insert {
+   display: flex;
+   font-weight: 700;
+   background-color: #C29974;
+   margin-top: 0;
+   margin-bottom: 91px;
+   justify-content: center;
+   font-size: 12px;
+   line-height: 16px;
+   text-transform: uppercase;
+   color: #FFFFFF;
+   padding: 11px;
+   letter-spacing: 0.3px;
+}
+
+.button-page,
+.button-page-checked {
+   font-size: 5px;
+   display: block;
+   border: none;
+   cursor: pointer;
+   margin-bottom: 11px;
+   width: 31px;
+   height: 3px;
+}
+
+.button-page {
+   background-color: #D6CAC2;
+}
+
+.button-page-checked {
+   background: #725F5B;
+}
+
+.button-page:hover {
+   background: #725F5B;
+}
+
+.button-page-checked {
+   background: #725F5B;
+}
+
+.designed {
+   font-family: 'Crimson Text';
+   font-style: italic;
+   font-weight: 400;
+   font-size: 20px;
+   line-height: 26px;
+   margin: 0 auto 20px 0px;
+}
+
+.page {
+   font-family: 'Montserrat';
+   font-style: normal;
+   font-weight: 200;
+   font-size: 60px;
+   line-height: 73px;
+   color: rgba(30, 6, 6, 0.05);
+   margin: 0 auto 11px 0;
+}
+
+.sheet{
+   display: flex;
+   align-items: flex-start;
+   flex-direction: column;
+   padding: 17px 0px 0px 30px;
+   margin-right: 43px;
+}
+
+/*CATEGORY*/
+
+// .category {
+//    margin-bottom: 15px;
+// } 
+
+// .category-title {
+//    font-family: 'Montserrat';
+//    font-weight: 700;
+//    font-size: 38px;
+//    line-height: 46px;
+//    text-transform: uppercase;
+//    color: #1E0606;
+// }
+
+// .category-list {
+//    display: flex;
+//    flex-wrap: wrap;
+//    justify-content: space-between;
+   
+// }
+
+// .category-item {
+//    display: flex;
+//    width: 280px;
+//    height: 270px;
+//    align-items: center;
+//    justify-content: center;
+//    margin-bottom: 20px;
+//    margin-right: 10px;
+// }
+
+// .img1 {
+//    background-image: url('../img/apparelkids.jpg');
+//    background-color: #DBE4DB;
+// }
+
+// .img2 {
+//    background-image: url('../img/holidayshop.jpg');
+//    background-color: #EADDD3;
+// }
+
+// .img3 {
+//    background-image: url('../img/toys.jpg');
+//    background-color: #F8F2DA;
+// }
+
+// .img4 {
+//    background-image: url('../img/accessories.jpg');
+//    background-color: #D5D4E1;
+// }
+
+// .category-heading {
+//    font-family: 'Montserrat';
+//    font-weight: 700;
+//    font-size: 26px;
+//    line-height: 32px;
+//    text-align: center;
+//    text-transform: uppercase;
+//    color: #FFFFFF;
+//    width: 68%;
+//    margin: 0 auto 0;
+// }
+
+// .category-list li:hover .category-heading{
+//    text-decoration-line: underline;
+// }
+
+// .category-heading:active {
+//    text-decoration-line: underline;
+// }
+
+// // .catalog-up {
+// //    display: flex;
+// //    flex-wrap: wrap;
+// //    margin: -11px 0px 50px -9px;
+// // }
+
+// // .catalog-up p {
+// //    font-family: 'Montserrat';
+// //    font-style: normal;
+// //    font-weight: 700;
+// //    font-size: 26px;
+// //    line-height: 32px;
+// //    text-align: center;
+// //    text-transform: uppercase;
+// //    color: #FFFFFF;
+// // }
+
+// // .catalog-item {
+// //    display: flex;
+// //    width: 280px;
+// //    height: 270px;
+// //    align-items: center;
+// //    justify-content: center;
+// //    margin: 10px;
+// // }
+
+// // .catalog-item p {
+// //    font-weight: 700;
+// //    font-size: 26px;
+// //    line-height: 32px;
+// //    text-align: center;
+// //    text-transform: uppercase;
+// //    color: #FFFFFF;
+// //    width: 72%;
+// //    margin: 0 auto;
+// // }
+
+// // .catalog-up li:hover p{
+// //    text-decoration-line: underline;
+// // }
+
+// // .catalog-item p:active {
+// //    text-decoration-line: underline;
+// // }
+
+
+/*arrow*/
+
+.arrow-wrapper{
+   display: flex;
+   margin-bottom: 73px;
+   align-items: center;
+}
+
+.arrow {
+   width: 37px;
+   height: 37px;
+   cursor: pointer;
+   background-repeat: no-repeat;
+   margin-right: 6px;
+   border: 0;
+   background-position: center;
+}
+
+.arrowL {
+   background-image: url('../img/VectorL.svg'); background-color: rgba(112, 187, 220, 0.2);
+}
+
+.arrowR {
+   background-image: url('../img/VectorR.svg'); background-color: rgba(112, 187, 220, 0.2);
+}
+
+.arrow-text {
+   width: 90%;
+   max-width: 580px;
+   margin-left: 15px;
+}
+
+/*DELIVERY*/
+
+.delivery {
+   display: flex;
+   align-items: flex-start;
+   margin-bottom: 91px;
+   justify-content: space-between;
+}
+
+.delivery-title {
+   font-family: 'Montserrat';
+   font-size: 38px;
+   text-transform: uppercase;
+   margin: 43px auto 29px 0;
+   position: relative;
+   cursor: pointer;
+}
+
+.delivery-title::after {
+   content: '';
+   position: absolute;
+   width: 326px;
+   height: 55px;
+   left: -60px;
+   top: 38px;
+   background: #70BBDC33;
+}
+
+.selection {
+   font-family: 'Crimson Text';
+   font-style: italic;
+   font-weight: 700;
+   font-size: 26px;
+   line-height: 34px;
+   color: #1E0606;
+   margin: 0;
+   letter-spacing: 0.9px;
+}
+
+.delivery-img{
+   text-align: left;
+   margin-right: 120px;
+}
+
+.delivery-wrapper {
+   display: flex;
+   flex-direction: column;
+   flex-wrap: wrap;
+   max-width: 480px;
+   margin-right: 100px;
+}
+
+.delivery-ul {
+   font-family: 'Crimson Text';
+   font-style: italic;
+   font-weight: 400;
+   font-size: 26px;
+   line-height: 34px;
+}
+
+.delivery-ul p {
+   margin: 0;
+}
+
+.delivery-ul li {
+   margin: 0 0 20px 0;
+   cursor: pointer;
+}
+
+.delivery-text p {
+   margin: 11px 10px 15px 0px;
+}
+
+.delivery-text button {
+   margin-top: 11px;
+}
+
+/*brands*/
+
+.brands {
+   margin-bottom: 112px;
+}
+
+.brands-list {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+/*ABOUT*/
+
+.about {
+   display: flex;
+   align-items: flex-start;
+   margin-bottom: 155px;
+}
+
+.about-item {
+   background: #E1F0F7;
+   width: 543px;
+   padding: 0 30px 30px;
+}
+
+.about-item:first-child {
+   margin-right: 57px;
+}
+
+.about-title {
+   font-family: 'Montserrat';
+   font-style: normal;
+   font-weight: 700;
+   font-size: 38px;
+   line-height: 46px;
+   text-transform: uppercase;
+   color: #1E0606;
+   margin: -23px 0 22px;
+}
+
+.map {
+   margin-bottom: -155px;
+   margin-top: 16px;
+   border: none;
+}
+
+.about-ul {
+   font-family: 'Crimson Text';
+   font-style: italic;
+   font-weight: 400;
+   font-size: 26px;
+   line-height: 34px;
+   margin: -12px 0px -5px 0;
+}
+
+.about-item a {
+   margin-top: 4px;
+}
+
+/*POPUP*/
+
+.popup {
+   position: fixed;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   z-index: 2;
+   display: none;
+   align-items: center;
+   justify-content: center;
+   background: rgba(125, 151, 218, 0.8);
+}
+
+.popup-open {
+   display: flex;
+}
+
+.popup-close {
+   border: none;
+   background: transparent;
+   position: absolute;
+   right: -30px;
+   top: 0;
+   color: #FFFFFF;
+   transform: rotate(90deg);
+   cursor: pointer;
+}
+
+.popup-close:hover {
+   opacity: .7;
+}
+
+.popup-close:active {
+   opacity: .4;
+}
+
+.contact-form-popup {
+   width: 680px;
+   background: #E5EAF8;
+   padding: 42px 40px;
+   position: relative;
+}
+
+.contact-form-popup label {
+   font-family: 'Roboto';
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 16px;
+   margin-bottom: 6px;
+}
+
+
+
+
+
+/*CONTACT*/
+
+.contact {
+   display: flex;
+   justify-content: space-between;
+}
+
+.contact-support {
+   width: 380px;
+}
+
+.contact-support p {
+   margin-top: 0;
+}
+
+.contact-help {
+   font-family: 'Montserrat';
+   font-weight: 600;
+   font-size: 26px;
+   line-height: 34px;
+   text-transform: uppercase;
+   color: #C29974;
+}
+
+.contact-title {
+   font-family: 'Montserrat';
+   font-style: normal;
+   font-weight: 700;
+   font-size: 40px;
+   line-height: 49px;
+   text-transform: uppercase;
+   color: #1E0606;
+   margin-bottom: 15px;
+   letter-spacing: 1px;
+}
+
+.contact label {
+   font-size: 14px;
+   line-height: 19px;
+   margin: 0;
+}
+
+
+
+/*TOYS*/
+
+
+
+.toys-title {
+   font-family: 'Montserrat';
+   font-style: normal;
+   font-weight: 700;
+   font-size: 40px;
+   line-height: 49px;
+   text-transform: uppercase;
+   color: #1E0606;
+   margin-bottom: 15px;
+}
+
+.toys-banner {
+   background: #e5eaf8;
+   color: #AAAAAA;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 22px;
+   margin: 0 auto;
+   margin-bottom: 61px;
+}
+
+.toys-form {
+   display: flex;
+   align-items: flex-start;
+}
+
+.toys-box-color,
+.toys-box-delivery,
+.toys-box-amount,
+.range {
+   margin: 42px 0 27px 2px;
+}
+
+.toys-box-color li {
+   margin-bottom: 15px;
+}
+
+.toys-box-delivery li {
+   margin-bottom: 12px;
+}
+
+.range {
+   margin-right: 104px;
+}
+
+.toys-box-color {
+   margin-right: 118px;
+}
+
+.toys-box-delivery {
+   margin-right: 67px;
+}
+
+.toys-box-amount {
+   margin-right: 61px;
+}
+
+legend,
+.range {
+   font-weight: 700;
+   font-size: 16px;
+   line-height: 22px;
+   color: #1E0606;
+   margin-bottom: 15px;
+}
+
+.toys-amount {
+   display: flex;
+}
+
+.products {
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+   margin-bottom: 33px;
+}
+
+.products p {
+   font-weight: 700;
+   font-size: 16px;
+   line-height: 22px;
+   text-align: center;
+   color: #1E0606;
+}
+
+.products h2 {
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 19px;
+   text-align: center;
+   color: #1E0606;
+   margin-top: 29px;
+}
+
+.toys-item {
+   width: 380px;
+   justify-content: space-between;
+   margin-bottom: 29px;
+   position: relative;
+}
+
+.toys-form button {
+   margin-top: 79px;
+}
+
+/*RANGE*/
+
+.range {
+   display: flex;
+   flex-direction: column;
+   margin-bottom: 16px;
+   width: 188px;
+}
+
+.cost-list {
+   display: flex;
+   justify-content: space-between;
+   margin-top: -6px;
+   margin-right: -15px;
+}
+
+.range input {
+   padding: 0;
+}
+
+input[type=range] {
+   height: 4px;
+   -webkit-appearance: none;
+   margin: 10px 0;
+   border: none;
+   width: 100%;
+}
+
+input[type=range]:focus {
+   outline: none;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+   width: 100%;
+   height: 4px;
+   cursor: pointer;
+   box-shadow: 0px 0px 0px #FFFFFF;
+   background: #808080;
+   border-radius: 0px;
+   border: 0px solid #C29974;;
+}
+
+input[type=range]::-webkit-slider-thumb {
+   box-shadow: 0px 0px 0px #FFFFFF;
+   border: 9px solid #C29974;;
+   height: 24px;
+   width: 24px;
+   border-radius: 28px;
+   background: #FFFFFF;
+   cursor: pointer;
+   -webkit-appearance: none;
+   margin-top: -10px;
+}
+
+.toys-item::after {
+   content: attr(data-tooltip);
+   position: absolute;
+   width: 207px;
+   height: 207px;
+   left: 90px;
+   top: 90px;
+   border: none;
+   font-family: 'Montserrat';
+   font-weight: 700;
+   font-size: 26px;
+   line-height: 29px;
+   text-transform: uppercase;
+   color: #1E0606;
+   justify-content: center;
+   pointer-events: none;
+   opacity: 0;
+   background-position: center;
+   display: flex;
+   align-items: center;
+}
+
+.toys-item:hover::after {
+   opacity: 1; 
+   background:rgba(229, 234, 248, 0.9);
+}
+
+.toys-item:active::after {
+   background:rgba(229, 234, 248, 0.670);
+}
+
+
+/*CATALOG*/
+
+.catalog-title {
+   font-family: 'Montserrat';
+   font-weight: 700;
+   font-size: 40px;
+   line-height: 49px; 
+   text-transform: uppercase;
+   color: #1E0606;
+   margin: 0 0 15px 0;
+}
+
+
+
+.img5 {
+   background-image: url('../img/catalog/sale.jpg');
+   background-color: #F3D0DB;
+}
+
+.img6 {
+   background-image: url('../img/catalog/APPARELadults.jpg');
+   background-color: #E5EAF8;
+}
+
+.catalog-product {
+   font-family: 'Montserrat';
+   font-style: normal;
+   font-weight: 700;
+   font-size: 38px;
+   line-height: 46px;
+   text-transform: uppercase;
+   color: #1E0606;
+   margin-bottom: 24px;
+}
+
+.product {
+   width: 680px;
+   margin: 0px -10px 55px 199px;
+}
+
+.product p {
+   margin-bottom: 15px;
+   margin-top: 0;
+}
+
+
+/*BLOG*/
+
+.blog-title {
+   font-family: 'Montserrat';
+   font-style: normal;
+   font-weight: 700;
+   font-size: 40px;
+   line-height: 49px;
+   text-transform: uppercase;
+   color: #1E0606;
+   position: relative;
+   margin-bottom: 15px;
+}
+
+.blog-list {
+   display: flex;
+   flex-wrap: wrap;
+   margin-bottom: 16px;
+   justify-content: space-between;
+}
+
+.blog-list li {
+   width: 380px;
+   margin-bottom: 13px;
+}
+
+
+.blog-item {
+   font-family: 'Montserrat';
+   font-size: 24px;
+   line-height: 31px;
+   color: #1E0606;
+   margin: 0;
+}
+
+.blog-data {
+   font-size: 16px;
+   line-height: 22px;
+   color: #818181;
+   margin-top: 20px;
+   margin-bottom: 5px;
+}
+
+.blog-text {
+   margin-bottom: 20px;
+   font-size: 18px;
+   line-height: 25px;
+   color: #1E0606;
+}
+
+.blog-list a:hover .blog-item {
+   text-decoration-line: underline;
+}
+
+.blog-list a:active .blog-item {
+   text-decoration-line: underline;
 }

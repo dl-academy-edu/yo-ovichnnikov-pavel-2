@@ -1,0 +1,73 @@
+.category {
+   margin-bottom: 15px;
+} 
+
+.category-title {
+   font-family: 'Montserrat';
+   font-weight: 700;
+   font-size: 38px;
+   line-height: 46px;
+   text-transform: uppercase;
+   color: #1E0606;
+}
+
+.category-list,
+.category-list_2 {
+   display: flex;
+   flex-wrap: wrap;
+   // justify-content: space-between;
+}
+
+.category-list_2 {
+   margin-left: 200px;
+}
+
+.category-item {
+   display: flex;
+   width: 280px;
+   height: 270px;
+   align-items: center;
+   justify-content: center;
+   margin-bottom: 20px;
+   margin-right: 15px;
+}
+
+.img1 {
+   background-image: url('../img/apparelkids.jpg');
+   background-color: #DBE4DB;
+}
+
+.img2 {
+   background-image: url('../img/holidayshop.jpg');
+   background-color: #EADDD3;
+}
+
+.img3 {
+   background-image: url('../img/toys.jpg');
+   background-color: #F8F2DA;
+}
+
+.img4 {
+   background-image: url('../img/accessories.jpg');
+   background-color: #D5D4E1;
+}
+
+.category-heading {
+   font-family: 'Montserrat';
+   font-weight: 700;
+   font-size: 26px;
+   line-height: 32px;
+   text-align: center;
+   text-transform: uppercase;
+   color: #FFFFFF;
+   width: 68%;
+   margin: 0 auto 0;
+}
+
+.category-list li:hover .category-heading{
+   text-decoration-line: underline;
+}
+
+.category-heading:active {
+   text-decoration-line: underline;
+}
