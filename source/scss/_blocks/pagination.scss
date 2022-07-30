@@ -1,0 +1,65 @@
+/*PAGE*/
+
+.page__switching {
+    display: flex;
+    margin-bottom: 48px;
+    justify-content: space-between;
+    &__left,
+    &__right {
+      width: 37px;
+      height: 37px;
+      cursor: pointer;
+      background-repeat: no-repeat;
+      border: 0;
+      background-position: center;
+      background-color: transparent
+    }
+  }
+
+  .page__switching__left {
+    background-image: url('../img/page-left.svg');
+  }
+  
+  .page__switching__right {
+    background-image: url('../img/page-right.svg');
+    &:hover {
+      background-image: url('../img/arrowhvr.svg');
+    }
+    &:active {
+      background-image: url('../img/arrowact.svg');
+    }
+  }
+  
+  // .page-numbers {
+  //   font-family: 'Montserrat';
+  //   font-weight: 700;
+  //   font-size: 16px;
+  //   line-height: 20px;
+  //   text-transform: uppercase;
+  //   color: #1E0606;
+  //   display: flex;
+  //   letter-spacing: 67px
+  // }
+  
+  /*PAGINATION*/
+  
+  .pagination a {
+    @include font(700,16px,20px);
+    font-family: 'Montserrat';
+    // font-style: normal;
+    // font-weight: 700;
+    // font-size: 16px;
+    // line-height: 20px;
+    text-transform: uppercase;
+    margin: 32px;
+    text-decoration: none;
+    color: #1E0606;
+  }
+  
+  .pagination a.pagination__active {
+    color: #C29974;
+  }
+  
+  .pagination a:hover:not(.pagination__active) {
+    color: #AAAAAA;
+  }   

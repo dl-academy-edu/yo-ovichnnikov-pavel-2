@@ -1,71 +1,95 @@
 .footer {
+  @include font;
   background: #434343;
   color: #AAAAAA;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 22px;
+  // font-weight: 400;
+  // font-size: 16px;
+  // line-height: 22px;
   margin: 0 auto;
   margin-bottom: 100px;
+  &__list {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 83px 0 0 0;
+    & li {
+      margin-bottom: 15px;
+    }
+  }
+  & nav,
+  & form {
+    padding-top: 11px;
+  }
+  &__down {
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #666666;
+    padding: 6px 0 100px 0;
+    & p {
+      margin-right: 109px;
+    }
+    & a {
+      color: #A2A2A2;
+      width: 380px;
+    }
+    & a:hover,
+    & a:active {
+      text-decoration-line: underline;
+      color: #FFFFFF;
+    }
+  }
+  &__color {
+    color: #fff;
+    margin-right: 25px;
+    & a {
+      color: #fff;
+      width: 380px;
+    }
+    & a:hover {
+      opacity: 50%;
+    }
+    & a:active {
+      opacity: 20%;
+    }
+  }
 }
 
-.footer-list {
-  display: flex;
-  align-items: flex-start;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 83px 0 0 0;
-}
 
-.footer-list li {
-  margin-bottom: 15px;
-}
-
-.networks {
-  display: flex;
-}
-
-.networks li {
-  margin-top: 23px;
-  margin-right: 10px;
-}
-
-.footer nav,
-.footer form {
-  padding-top: 11px;
-}
-
-/*Rating*/
+/*RATING*/
 
 .star {
-overflow: hidden;
+  overflow: hidden;
   display: flex;
   flex-direction: row-reverse;
   justify-content: flex-end;
 }
+
 .star:not(:checked) > input {
-display: none;
+  display: none;
 }
+
 .star:not(:checked) > label {
-width: 20px;
-padding: 0;
-cursor: pointer;
+  width: 20px;
+  padding: 0;
+  cursor: pointer;
   color: #FFFFFF;
 }
 
 .star:not(:checked) > label:before {
-content: '★';
+  content: '★';
 }
 
 .star > input:checked ~ label,
 .star > input:checked ~ span {
-color: #C29974;
+  color: #C29974;
 }
 
 .star:not(:checked) > label:hover,
 .star:not(:checked) > label:hover ~ label,
 .star:not(:checked) > label:hover,
 .star:not(:checked) > label:hover ~ span {
-color: #C29974;
+  color: #C29974;
 }
 
 .star > input:checked + label:hover,
@@ -73,28 +97,15 @@ color: #C29974;
 .star > input:checked ~ label:hover,
 .star > input:checked ~ label:hover ~ label,
 .star > label:hover ~ input:checked ~ label {
-color: #C29974;
+  color: #C29974;
 }
 
 .star > label:active {
-position: relative;
+  position: relative;
 }
 
 .star:focus-within p {
   color: #C29974;
-}
-
-.line p {
-  border-bottom: 1px solid #666666;
-  width: 380px;
-  padding-bottom: 22px;
-}
-
-.down {
-  display: flex;
-  align-items: center;
-  border-top: 1px solid #666666;
-  padding: 6px 0 100px 0;
 }
 
 .star {
@@ -102,43 +113,30 @@ position: relative;
   padding-top: 13px;
 }
 
-.down p {
-  margin-right: 109px;
-}
 
+/*LINE*/
 
-.footer-color {
-  color: #fff;
-  margin-right: 25px;
-}
-
-.footer-color a {
-  color: #fff;
+.line p {
+  border-bottom: 1px solid #666666;
   width: 380px;
+  padding-bottom: 22px;
 }
 
-.down a {
-  color: #A2A2A2;
-  width: 380px;
-}
 
-.down a:hover,
-.down a:active {
-  text-decoration-line: underline;
-  color: #FFFFFF;
-}
+/*EMAIL*/
 
-.email-wrapper {
+.email__wrapper {
   display: flex;
 }
 
 .email {
+  @include font;
   background-color: #666666;
   width: 300px;
   height: 40px;
   border: 1px solid #666666;
-  font-size: 16px;
-  line-height: 22px;
+  // font-size: 16px;
+  // line-height: 22px;
   color: #EBEBEB;
   padding: 9px 0px 9px 15px;
 }
@@ -156,18 +154,19 @@ position: relative;
   color: #EBEBEB; 
 }
 
-.footer-color a:hover {
-  opacity: 50%;
-}
 
-.footer-color a:active {
-  opacity: 20%;
-}
+/*NETWORKS FOOTER*/
 
-.networks a:hover {
-  opacity: 50%;
-}
-
-.networks a:active {
-  opacity: 20%;
+.networks {
+  display: flex;
+  & li {
+    margin-top: 23px;
+    margin-right: 10px;
+  }
+  & a:hover {
+    opacity: 50%;
+  }
+  & a:active {
+    opacity: 20%;
+  }
 }
