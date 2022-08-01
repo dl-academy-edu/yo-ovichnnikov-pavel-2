@@ -21,36 +21,36 @@
    
     <main class="container">
         <section class="banner">
-            <ul class="undotted banner-list">
-                <li class=" sheet">
-                    <p class="page">01</p>
+            <ul class="undotted banner__list">
+                <li class="page sheet">
+                    <p class="page__list">01</p>
                     <ul class="undotted">
-                        <li class="button-page-checked">
-                            <button class="button-page-checked"></button>
+                        <li>
+                            <button class="page__link_checked"></button>
                         </li>
                         <li>
-                            <button class="button-page"></button>
+                            <button class="button__page page__link"></button>
                         </li>
                         <li>
-                            <button class="button-page"></button>
+                            <button class="page__link"></button>
                         </li>
                         <li>
-                            <button class="button-page"></button>
+                            <button class="page__link"></button>
                         </li>
                     </ul>
                 </li>
-                <li class="banner-item">
-                    <h1 class="banner-title">THE OOH NOO COLLECTION</h1>
-                    <p class="designed">Designed in Slovenia</p>
-                    <a href="#" aria-label="explore-now" class="button btn-js">EXPLORE NOW</a>
+                <li class="banner__item">
+                    <h1 class="banner__title">THE OOH NOO COLLECTION</h1>
+                    <p class="banner__title_designed">Designed in Slovenia</p>
+                    <a href="#" aria-label="explore-now" class="button btn_js">EXPLORE NOW</a>
                 </li> 
             </ul>
-            <p class="insert">Free (continental) USA shipping on all orders of $100 USD or more!</p>
+            <p class="banner__text">Free (continental) USA shipping on all orders of $100 USD or more!</p>
         </section>
   
         <section class="category">
-            <h2 class="category-title">Category Products</h2>
-            <ul class="category-list undotted">
+            <h2 class="category__title">Category Products</h2>
+            <ul class="category__list undotted">
 
                 @@include('blocks/category.html', {
                     "link": "#",
@@ -83,19 +83,19 @@
             </ul>
         </section>
 
-        <div class="arrow-wrapper">
-            <button class="arrow arrowL"></button>
-            <button class="arrow arrowR"></button>
-            <p class="arrow-text">Modern finds for the modern home. Curated goods by unique designers around the world from fashion to furniture for kids and adults.</p>
+        <div class="arrow">
+            <button class="arrow__wrapper_left"></button>
+            <button class="arrow__wrapper_right"></button>
+            <p class="arrow__text">Modern finds for the modern home. Curated goods by unique designers around the world from fashion to furniture for kids and adults.</p>
         </div>   
             
         <section class="delivery">
-            <img src="../img/girl.jpg" alt="" class="delivery-img" width="480" height="559">
-            <div class="delivery-wrapper">
-                <h2 class="delivery-title">Delivery</h2>
-                <ul class="undotted delivery-ul">
+            <img src="../img/girl.jpg" alt="" class="delivery__img" width="480" height="559">
+            <div class="delivery__wrapper">
+                <h2 class="delivery__title">Delivery</h2>
+                <ul class="undotted delivery__wrapper__choice">
                     <li>
-                        <p class="selection">Delivery</p>
+                        <p class="delivery__wrapper__choice_checked">Delivery</p>
                     </li>
                     <li>
                         <p>Guarantee</p>
@@ -104,12 +104,12 @@
                         <p>Credit</p>
                     </li>
                 </ul>
-                <ul class="undotted delivery-text">
+                <ul class="undotted delivery__text">
                     <li>
-                        <p>Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply magical.</p>
+                        <p>Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply magical.</p>
                     </li>
                     <li>
-                        <p>What started as an outlet to deal  with the traumatic loss of my husband, dlk has now become a truly happy place for me and i have you and all of the beautiful designers that we work with to thank!</p>
+                        <p>What started as an outlet to deal  with the traumatic loss of my husband, dlk has now become a truly happy place for me and i have you and all of the beautiful designers that we work with to thank!</p>
                     </li>
                     <li>
                         <button aria-label="learn-more" class="button">LEARN MORE</button>
@@ -120,7 +120,7 @@
 
         <section class="brands">
             <h2 class="hidden">Brands</h2>
-            <ul class="undotted brands-list">
+            <ul class="undotted brands__list">
                 <li>
                     <img src="../img/mailgroup.jpg" alt="" width="193" height="60">
                 </li>
@@ -137,15 +137,15 @@
         </section>
 
         <section class="about">
-            <div class="about-item">
-                <h2 class="about-title">Design Life Kids</h2>
-                <p class="about-ul">About Us</p>
-                <p>Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply magical.</p>
+            <div class="about__list">
+                <h2 class="about__title">Design Life Kids</h2>
+                <p class="about__item">About Us</p>
+                <p>Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply magical.</p>
                 <a href="#" aria-label="buy" class="button">buy now</a>
             </div>
-            <div class="about-item">
-                <h2 class="about-title">Contacts</h2>
-                    <p>Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply magical.</p>
+            <div class="about__list">
+                <h2 class="about__title">Contacts</h2>
+                    <p>Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply magical.</p>
                     <!-- <p><img src="images/maps.jpg" class="map" alt="" width="483" height="196"></p> -->
                     <iframe aria-label="map" class="map" src="https://yandex.ru/map-widget/v1/?um=constructor%3A98d614c780df4e5d0b60de6b04b9b46736ffb4f170f9bae3b75a537164323823&amp;source=constructor" width="483" height="196"></iframe>
             </div>
@@ -156,33 +156,33 @@
 
    <section class="popup">
         <h2 class="hidden">Modal Block</h2>
-        <form action="#" class="contact-form-popup">
-            <div class="contact-wrapper">
+        <form action="#" class="contact__form__popup">
+            <div class="contact__wrapper">
                 <label for="input-name">Name</label>
                 <input type="text" id="input-name">
             </div>
-            <div class="contact-2-column">
-                <div class="contact-wrapper">
+            <div class="contact__2__column">
+                <div class="contact__wrapper">
                     <label for="input-phone">Phone</label>
                     <input type="text" id="input-phone">
                 </div>
-                <div class="contact-wrapper">
+                <div class="contact__wrapper">
                     <label for="input-email">Email</label>
                     <input type="text" id="input-email">
                 </div>
             </div>
-            <div class="contact-wrapper">
+            <div class="contact__wrapper">
                 <label for="textarea">Message</label>
                 <textarea name="message" id="textarea" cols="30" rows="10"></textarea>
             </div>
 
             <div class="clicking">
-                <input id="checkbox" type="checkbox" name="checkbox"  class="checkbox-input" onchange="document.getElementById('submit').disabled = !this.checked;" />
-                <label for="checkbox" class="checkbox-label">By clicking on the button, you consent to the processing of your personal data</label>   
+                <input id="checkbox" type="checkbox" name="checkbox"  class="checkbox_input" onchange="document.getElementById('submit').disabled = !this.checked;" />
+                <label for="checkbox" class="checkbox_label">By clicking on the button, you consent to the processing of your personal data</label>   
                 <input aria-label="btn-submit" type="submit" class="button" disabled="disabled" name="submit" id="submit" value="Submit"/>
             </div>
 
-            <button class="popup-close"><img aria-label="close-btn" src="img/btn-cls.svg" alt="" width="15" height="15"></button>
+            <button class="popup__close"><img aria-label="close-btn" src="img/btn-cls.svg" alt="" width="15" height="15"></button>
         </form>
     </section>
 

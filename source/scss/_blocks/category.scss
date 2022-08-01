@@ -1,36 +1,50 @@
 .category {
-   margin-bottom: 15px;
+   &__title {
+      @include font(700,38px,46px);
+      font-family: 'Montserrat';
+      // font-weight: 700;
+      // font-size: 38px;
+      // line-height: 46px;
+      text-transform: uppercase;
+      color: #1E0606;
+   }
+   &__list,
+   &__list_2 {
+      display: flex;
+      flex-wrap: wrap;
+   }
+   &__list_2 {
+      margin-left: 200px;
+   }
+   &__item {
+      display: flex;
+      width: 280px;
+      height: 270px;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
+      margin-right: 15px;
+   }
+   &__heading {
+      @include font(700,26px,32px);
+      font-family: 'Montserrat';
+      // font-weight: 700;
+      // font-size: 26px;
+      // line-height: 32px;
+      text-align: center;
+      text-transform: uppercase;
+      color: #FFFFFF;
+      width: 68%;
+      margin: 0 auto 0;
+   }
+   &__heading:active {
+      text-decoration-line: underline;
+   } 
+   &__list li:hover .category__heading,
+   &__list_2 li:hover .category__heading {
+      text-decoration-line: underline;
+   }
 } 
-
-.category-title {
-   font-family: 'Montserrat';
-   font-weight: 700;
-   font-size: 38px;
-   line-height: 46px;
-   text-transform: uppercase;
-   color: #1E0606;
-}
-
-.category-list,
-.category-list_2 {
-   display: flex;
-   flex-wrap: wrap;
-   // justify-content: space-between;
-}
-
-.category-list_2 {
-   margin-left: 200px;
-}
-
-.category-item {
-   display: flex;
-   width: 280px;
-   height: 270px;
-   align-items: center;
-   justify-content: center;
-   margin-bottom: 20px;
-   margin-right: 15px;
-}
 
 .img1 {
    background-image: url('../img/apparelkids.jpg');
@@ -52,22 +66,12 @@
    background-color: #D5D4E1;
 }
 
-.category-heading {
-   font-family: 'Montserrat';
-   font-weight: 700;
-   font-size: 26px;
-   line-height: 32px;
-   text-align: center;
-   text-transform: uppercase;
-   color: #FFFFFF;
-   width: 68%;
-   margin: 0 auto 0;
+.img5 {
+   background-image: url('../img/catalog/sale.jpg');
+   background-color: #F3D0DB;
 }
 
-.category-list li:hover .category-heading{
-   text-decoration-line: underline;
-}
-
-.category-heading:active {
-   text-decoration-line: underline;
+.img6 {
+   background-image: url('../img/catalog/APPARELadults.jpg');
+   background-color: #E5EAF8;
 }

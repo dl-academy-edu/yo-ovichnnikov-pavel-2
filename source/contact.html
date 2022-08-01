@@ -15,15 +15,16 @@
 </head>
 
 <body>
+    
     @@include('blocks/header.html')
 
     <main class="container">
         <section>
-            <h1 class="contact-title">Contact  Us</h1>
+            <h1 class="contact__title">Contact  Us</h1>
             <div>
-                <ul class="undotted crumbs">
+                <ul class="undotted crumbs breadcrumbs">
                     <li>
-                        <a href="index.html" class="breadcrumbs">Home</a>
+                        <a href="index.html" class="breadcrumbs__link">Home</a>
                     </li>
                     <li>
                         <p>Contact us</p>
@@ -31,41 +32,42 @@
                 </ul>
             </div>
             <div class="contact">
-                <form action="#" class="contact-form">
-                    <div class="contact-wrapper">
+                <form action="#" class="contact__form">
+                    <div class="contact__wrapper">
                         <label for="input-name">Name</label>
                         <input type="text" id="input-name" placeholder="Ivan Ivanov">
                     </div>
-                    <div class="contact-2-column">
-                        <div class="contact-wrapper">
+                    <div class="contact__2__column">
+                        <div class="contact__wrapper">
                             <label for="input-phone">Phone</label>
                             <input type="text" id="input-phone">
                         </div>
-                        <div class="contact-wrapper">
+                        <div class="contact__wrapper">
                             <label for="input-email">Email</label>
                             <input type="text" id="input-email">
                         </div>
                     </div>
-                    <div class="contact-wrapper">
+                    <div class="contact__wrapper">
                         <label for="textarea">Message</label>
                         <textarea name="message" id="textarea" cols="30" rows="10"></textarea>
                     </div>
         
                     <div class="clicking">
-                        <input id="checkbox" type="checkbox" name="checkbox"  class="checkbox-input" onchange="document.getElementById('submit').disabled = !this.checked;"/>
-                        <label for="checkbox" class="checkbox-label">By clicking on the button, you consent to the processing of your personal data</label>   
+                        <input id="checkbox" type="checkbox" name="checkbox"  class="checkbox_input" onchange="document.getElementById('submit').disabled = !this.checked;"/>
+                        <label for="checkbox" class="checkbox_label">By clicking on the button, you consent to the processing of your personal data</label>   
                         <input type="submit" aria-label="btn-submit" class="button" disabled="disabled" name="submit" id="submit" value="Submit"/>
                     </div>
                 </form>
-                <div class="contact-support">
+                <div class="support">
                     <p>Our support team are on-hand to assist with any issues you are experiencing.</p>
                     <p>Please use the form to contact us with your needs. Send us a message and we'll respond as soon as possible.</p>
-                    <p class="contact-help">An expert is waiting to help you!</p>
+                    <p class="support__help">An expert is waiting to help you!</p>
                 </div>
             </div>
         </section>
     </main>
 
     @@include('blocks/footer.html')
+    
 </body>
 </html>

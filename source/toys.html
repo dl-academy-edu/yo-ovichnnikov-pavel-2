@@ -18,15 +18,15 @@
     @@include('blocks/header.html')
 
     <main>
-        <section class="container">
-            <h1 class="toys-title">Toy for kids</h1>
+        <section class="container toys">
+            <h1 class="toys__title">Toy for kids</h1>
             <div>
-                <ul class="undotted crumbs">
+                <ul class="undotted breadcrumbs">
                     <li>
-                        <a href="index.html" class="breadcrumbs">Home</a>
+                        <a href="index.html" class="breadcrumbs__link">Home</a>
                     </li>
                     <li>
-                        <a href="catalog.html" class="breadcrumbs">Catalog</a>
+                        <a href="catalog.html" class="breadcrumbs__link">Catalog</a>
                     </li>
                     <li>
                         <p>Toys</p>
@@ -35,13 +35,13 @@
             </div>
         </section>
 
-        <div class="toys-banner">
+        <div class="toys__banner">
             <form action="#" class="container">
-                <div class="toys-form"> 
-                    <div class="range">
+                <div class="toys__form"> 
+                    <div class="toys__form__box_range">
                         <label>Cost</label>
                         <input type="range" max="500" value="100">
-                        <ul class="undotted cost-list">
+                        <ul class="undotted toys__form__box_range_cost">
                             <li>
                                 <p>0</p>
                             </li>
@@ -51,56 +51,56 @@
                         </ul>            
                     </div>
                     
-                    <fieldset class="toys-box-color">
+                    <fieldset class="toys__form__box_color">
                         <legend>Color</legend>
                         <ul class="undotted">
                             <li>
-                                <input type="checkbox" id="inpul-black" class="checkbox-input" checked>
-                                <label for="inpul-black" class="checkbox-label">Black</label>
+                                <input type="checkbox" id="inpul-black" class="checkbox_input" checked>
+                                <label for="inpul-black" class="checkbox_label">Black</label>
                             </li>
                             <li>
-                                <input type="checkbox" id="inpul-blue" class="checkbox-input">
-                                <label for="inpul-blue" class="checkbox-label">Blue</label>
+                                <input type="checkbox" id="inpul-blue" class="checkbox_input">
+                                <label for="inpul-blue" class="checkbox_label">Blue</label>
                             </li>
                             <li>
-                                <input type="checkbox" id="inpul-green" class="checkbox-input">
-                                <label for="inpul-green" class="checkbox-label">Green</label>
+                                <input type="checkbox" id="inpul-green" class="checkbox_input">
+                                <label for="inpul-green" class="checkbox_label">Green</label>
                             </li>
                             <li>
-                                <input type="checkbox" id="inpul-white" class="checkbox-input">
-                                <label for="inpul-white" class="checkbox-label">White</label>
+                                <input type="checkbox" id="inpul-white" class="checkbox_input">
+                                <label for="inpul-white" class="checkbox_label">White</label>
                             </li>
                         </ul>
                     </fieldset>
 
-                    <fieldset class="toys-box-delivery">
+                    <fieldset class="toys__form__box_delivery">
                         <legend>Delivery</legend>
                         <ul class="undotted">
                             <li>
-                                <input type="radio" id="inpul-freeshipping" name="report" class="radio-input">
-                                <label for="inpul-freeshipping" class="radio-label">Free shipping</label>
+                                <input type="radio" id="inpul-freeshipping" name="report" class="radio_input">
+                                <label for="inpul-freeshipping" class="radio_label">Free shipping</label>
                             </li>
                             <li>
-                                <input type="radio" id="inpul-fastshipping" name="report" class="radio-input" checked>
-                                <label for="inpul-fastshipping" class="radio-label">Fast shipping</label>
+                                <input type="radio" id="inpul-fastshipping" name="report" class="radio_input" checked>
+                                <label for="inpul-fastshipping" class="radio_label">Fast shipping</label>
                             </li>
                         </ul>
                     </fieldset>
 
-                    <fieldset class="toys-box-amount">
+                    <fieldset class="toys__form__box_amount">
                         <legend>Amount</legend>
-                        <ul class="undotted toys-amount">
+                        <ul class="undotted">
                             <li>
-                                <input type="radio" id="inpul-0-5" name="report-amount" class="toys-input" checked>
-                                <label for="inpul-0-5" class="toys-label">0-5</label>
+                                <input type="radio" id="inpul-0-5" name="report-amount" class="toys_input" checked>
+                                <label for="inpul-0-5" class="toys_label">0-5</label>
                             </li>
                             <li>
-                                <input type="radio" id="inpul-10-20" name="report-amount" class="toys-input">
-                                <label for="inpul-10-20" class="toys-label">10-20</label>
+                                <input type="radio" id="inpul-10-20" name="report-amount" class="toys_input">
+                                <label for="inpul-10-20" class="toys_label">10-20</label>
                             </li>
                             <li>
-                                <input type="radio" id="inpul-20-50" name="report-amount" class="toys-input">
-                                <label for="inpul-20-50" class="toys-label">20-50</label>
+                                <input type="radio" id="inpul-20-50" name="report-amount" class="toys_input">
+                                <label for="inpul-20-50" class="toys_label">20-50</label>
                             </li>
                         </ul>
                     </fieldset>
@@ -112,42 +112,42 @@
         <section class="container">
             <div>
                 <ul class="undotted products">
-                    <li class="toys-item" data-tooltip="LEARN MORE">
+                    <li class="toys__item" data-tooltip="LEARN MORE">
                         <a href="#">
                             <img src="./img/toys/toys1.jpg" alt="" width="380" height="385">
                             <h2>SHARKY BEAN BAG CHAIR COVER</h2>
                             <p>$60.00 USD</p>
                         </a>
                     </li>
-                    <li class="toys-item" data-tooltip="LEARN MORE">
+                    <li class="toys__item" data-tooltip="LEARN MORE">
                         <a href="#">
                             <img src="./img/toys/toys2.jpg" alt="" width="380" height="385">
                             <h2>BRASS DECO FRAMES</h2>
                             <p>$66.00 USD</p>
                         </a>
                     </li>
-                    <li class="toys-item" data-tooltip="LEARN MORE">
+                    <li class="toys__item" data-tooltip="LEARN MORE">
                         <a href="#">
                             <img src="./img/toys/toys3.jpg" alt="" width="380" height="385">
                             <h2>CIBO FULL APRON</h2>
                             <p>$60.00 USD</p>
                         </a>
                     </li>
-                    <li class="toys-item" data-tooltip="LEARN MORE">
+                    <li class="toys__item" data-tooltip="LEARN MORE">
                         <a href="#">
                             <img src="./img/toys/toys4.jpg" alt="" width="380" height="385">
                             <h2>GATCHA GATCHA GUMBALL MACHINE</h2>
                             <p>$56.00 USD</p>
                         </a>
                     </li>
-                    <li class="toys-item" data-tooltip="LEARN MORE">
+                    <li class="toys__item" data-tooltip="LEARN MORE">
                         <a href="#">
                             <img src="./img/toys/toys5.jpg" alt="" width="380" height="385">
                             <h2>CHRISTMAS ADVENT SCENTED CANDLE</h2>
                             <p>$29.00 USD</p>
                         </a>
                     </li>
-                    <li class="toys-item" data-tooltip="LEARN MORE">
+                    <li class="toys__item" data-tooltip="LEARN MORE">
                         <a href="#">
                             <img src="./img/toys/toys6.jpg" alt="" width="380" height="382">
                             <h2>TANGLE SPINNING TEA LIGHT</h2>
@@ -157,16 +157,8 @@
                 </ul>
             </div>
 
-            <div class="blog-page">
-                <a href="#" class="page-left"></a>
-                <div class="pagination">
-                    <a class="active" href="#">1</a>
-                    <a href="#">2</a>
-                    <a href="#">3</a>
-                    <a href="#">4</a>
-                </div>
-                <a href="#" class="page-right"></a>
-            </div>
+            @@include('blocks/pagination.html')
+
         </section>
     </main>
 
