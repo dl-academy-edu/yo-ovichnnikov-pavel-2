@@ -2,9 +2,6 @@
    &__title {
       @include font(700,38px,46px);
       font-family: 'Montserrat';
-      // font-weight: 700;
-      // font-size: 38px;
-      // line-height: 46px;
       text-transform: uppercase;
       color: #1E0606;
    }
@@ -28,9 +25,6 @@
    &__heading {
       @include font(700,26px,32px);
       font-family: 'Montserrat';
-      // font-weight: 700;
-      // font-size: 26px;
-      // line-height: 32px;
       text-align: center;
       text-transform: uppercase;
       color: #FFFFFF;

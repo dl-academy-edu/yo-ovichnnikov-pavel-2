@@ -10,9 +10,6 @@
     &__list {
       @include font(400,14px,19px);
       display: flex;
-      // font-weight: 400;
-      // font-size: 14px;
-      // line-height: 19px;
       text-transform: uppercase;
     }
     &__menu a {
@@ -22,16 +19,14 @@
     &__contact {
       @include font(700,14px,19px);
       font-family: 'Open Sans';
-      // font-weight: 700;
       text-transform: uppercase;  
       color: #1E0606;
-      // font-size: 14px;
-      // line-height: 19px;
       letter-spacing: 0.8px;
     }
     a:hover,
     &__search:hover {
       opacity: 50%;
+      transition: .4s;
     }
     a:active,
     &__search:active {
@@ -42,5 +37,6 @@
       border: 0;
       background: transparent;
       cursor: pointer;
+      transition: .4s;
     }
   }

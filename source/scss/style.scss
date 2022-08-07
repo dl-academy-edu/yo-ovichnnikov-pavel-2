@@ -22,7 +22,6 @@
 @import "_blocks/pagination";
 
 
-
 /*BANNER*/
 
 .banner {
@@ -59,13 +58,10 @@
    &__text {
       @include font(700,12px,16px);
       display: flex;
-      // font-weight: 700;
       background-color: #C29974;
       margin-top: 0;
       margin-bottom: 91px;
       justify-content: center;
-      // font-size: 12px;
-      // line-height: 16px;
       text-transform: uppercase;
       color: #FFFFFF;
       padding: 11px;
@@ -75,9 +71,6 @@
       @include font(400,20px,26px);
       font-family: 'Crimson Text';
       font-style: italic;
-      // font-weight: 400;
-      // font-size: 20px;
-      // line-height: 26px;
       margin: 0 auto 20px 0px;
    }
 }
@@ -103,6 +96,7 @@
    }
    &__link:hover {
       background: #725F5B;
+      transition: .4s;
    }
    &__link_checked {
       background: #725F5B;
@@ -110,10 +104,6 @@
    &__list {
       @include font(200,60px,73px);
       font-family: 'Montserrat';
-      // font-style: normal;
-      // font-weight: 200;
-      // font-size: 60px;
-      // line-height: 73px;
       color: rgba(30, 6, 6, 0.05);
       margin: 0 auto 11px 0;
    }
@@ -160,9 +150,6 @@
    &__title {
       @include font(700,38px,46px);
       font-family: 'Montserrat';
-      // font-weight: 700;
-      // font-size: 38px;
-      // line-height: 46px;
       text-transform: uppercase;
       margin: 43px auto 17px 0;
       position: relative;
@@ -193,9 +180,6 @@
       @include font(700,26px,34px);
       font-family: 'Crimson Text';
       font-style: italic;
-      // font-weight: 700;
-      // font-size: 26px;
-      // line-height: 34px;
       color: #1E0606;
       margin: 0;
       letter-spacing: 0.9px;
@@ -204,9 +188,6 @@
       @include font(400,26px,34px);
       font-family: 'Crimson Text';
       font-style: italic;
-      // font-weight: 400;
-      // font-size: 26px;
-      // line-height: 34px;
       & p {
          margin: 0;
       }
@@ -246,10 +227,6 @@
    &__title {
    @include font(700,38px,46px);
    font-family: 'Montserrat';
-   // font-style: normal;
-   // font-weight: 700;
-   // font-size: 38px;
-   // line-height: 46px;
    text-transform: uppercase;
    color: #1E0606;
    margin: -23px 0 22px;
@@ -266,9 +243,6 @@
       @include font(400,26px,34px);
       font-family: 'Crimson Text';
       font-style: italic;
-      // font-weight: 400;
-      // font-size: 26px;
-      // line-height: 34px;
       margin: -12px 0px -5px 0;
    }
 }
@@ -332,9 +306,6 @@
 .contact__form__popup label {
    @include font(400,14px,16px);
    font-family: 'Roboto';
-   // font-weight: 400;
-   // font-size: 14px;
-   // line-height: 16px;
    margin-bottom: 6px;
 }
 
@@ -347,10 +318,6 @@
    &__title {
       @include font(700,40px,49px);
       font-family: 'Montserrat';
-      // font-style: normal;
-      // font-weight: 700;
-      // font-size: 40px;
-      // line-height: 49px;
       text-transform: uppercase;
       color: #1E0606;
       margin-bottom: 15px;
@@ -378,9 +345,6 @@
    &__help {
       @include font(600,26px,34px);
       font-family: 'Montserrat';
-      // font-weight: 600;
-      // font-size: 26px;
-      // line-height: 34px;
       text-transform: uppercase;
       color: #C29974;
    }
@@ -415,10 +379,6 @@
    &__title {
       @include font(700,40px,49px);
       font-family: 'Montserrat';
-      // font-style: normal;
-      // font-weight: 700;
-      // font-size: 40px;
-      // line-height: 49px;
       text-transform: uppercase;
       color: #1E0606;
       margin-bottom: 15px;
@@ -426,11 +386,7 @@
    &__banner {
       @include font;
       background: $primary;
-      // background: #e5eaf8;
       color: #AAAAAA;
-      // font-weight: 400;
-      // font-size: 16px;
-      // line-height: 22px;
       margin: 0 auto;
       margin-bottom: 61px;
    }
@@ -474,9 +430,6 @@
 legend,
 .toys__form__box_range {
    @include font(700);
-   // font-weight: 700;
-   // font-size: 16px;
-   // line-height: 22px;
    color: #1E0606;
    margin-bottom: 15px;
 }
@@ -492,17 +445,11 @@ legend,
    margin-bottom: 33px;
    & p {
       @include font(700);
-      // font-weight: 700;
-      // font-size: 16px;
-      // line-height: 22px;
       text-align: center;
       color: #1E0606;
    }
    & h2 {
       @include font(400,14px,19px);
-      // font-weight: 400;
-      // font-size: 14px;
-      // line-height: 19px;
       text-align: center;
       color: #1E0606;
       margin-top: 29px;
@@ -586,9 +533,6 @@ input[type=range]::-webkit-slider-thumb {
    top: 90px;
    border: none;
    font-family: 'Montserrat';
-   // font-weight: 700;
-   // font-size: 26px;
-   // line-height: 29px;
    text-transform: uppercase;
    color: #1E0606;
    justify-content: center;
@@ -597,6 +541,7 @@ input[type=range]::-webkit-slider-thumb {
    background-position: center;
    display: flex;
    align-items: center;
+   transition: 1s;
 }
 
 .toys__item:hover::after {
@@ -614,9 +559,6 @@ input[type=range]::-webkit-slider-thumb {
 .catalog__title {
    @include font(700,40px,49px);
    font-family: 'Montserrat';
-   // font-weight: 700;
-   // font-size: 40px;
-   // line-height: 49px; 
    text-transform: uppercase;
    color: #1E0606;
    margin: 0 0 15px 0;
@@ -625,10 +567,6 @@ input[type=range]::-webkit-slider-thumb {
 .catalog__product__title {
    @include font(700,38px,46px);
    font-family: 'Montserrat';
-   // font-style: normal;
-   // font-weight: 700;
-   // font-size: 38px;
-   // line-height: 46px;
    text-transform: uppercase;
    color: #1E0606;
    margin-bottom: 24px;
@@ -649,10 +587,6 @@ input[type=range]::-webkit-slider-thumb {
 .blog__title {
    @include font(700,40px,49px);
    font-family: 'Montserrat';
-   // font-style: normal;
-   // font-weight: 700;
-   // font-size: 40px;
-   // line-height: 49px;
    text-transform: uppercase;
    color: #1E0606;
    position: relative;
@@ -671,16 +605,11 @@ input[type=range]::-webkit-slider-thumb {
    &__item {
       @include font(700,24px,31px);
       font-family: 'Montserrat';
-      // font-weight: 700;
-      // font-size: 24px;
-      // line-height: 31px;
       color: #1E0606;
       margin: 0;
    }
    &__data {
       @include font;
-      // font-size: 16px;
-      // line-height: 22px;
       color: #818181;
       margin-top: 20px;
       margin-bottom: 5px;
@@ -688,8 +617,6 @@ input[type=range]::-webkit-slider-thumb {
    &__text {
       @include font(400,18px,25px);
       margin-bottom: 20px;
-      // font-size: 18px;
-      // line-height: 25px;
       color: #1E0606;
    }
 }
@@ -698,6 +625,422 @@ input[type=range]::-webkit-slider-thumb {
    text-decoration-line: underline;
 }
 
-.blog a:active .blog__item {
-   text-decoration-line: underline;
+/*ANIMATION*/
+
+
+@keyframes anim__taxi {
+   0% {
+      margin-left: 200%;
+      }
+   25% {
+      margin-left: 150%;
+      }
+   50% {
+      margin-left: 90%;
+      }
+   75% {
+      margin-left: 90%;
+      }
+   100% {
+      margin-left: 0%;
+      }
+   }
+
+@keyframes anim__cars {
+   0% {
+      margin-left: 0%;
+   }
+   100% {
+      margin-left: 130%;
+   }
+   }
+
+@keyframes anim__clouds {
+   0% {
+      margin-left: 130%;
+   }
+   100% {
+      margin-left: 0%;
+   }
+}
+
+@keyframes anim__message {
+
+   0% {
+      opacity: 1;
+   }
+   25% {
+      opacity: 0;
+   }
+   50% {
+      opacity: 0;
+   }
+   75% {
+      opacity: 0;
+   }
+   100% {
+      opacity: 0;
+   }
+}
+
+@keyframes anim__handwoman {
+   
+   0% {
+      transform: rotate(0);
+   }
+   50% {
+      transform: rotate(-36deg);
+   }
+   100% {
+      transform: rotate(0);
+   }
+}
+
+@keyframes anim__handman {
+   
+   0% {
+      transform: rotate(146deg); 
+   }
+   50% {
+      transform: rotate(0);
+   }
+   100% {
+      transform: rotate(146deg);
+   }
+}
+
+@keyframes anim__fly {
+   
+   0% {
+      margin-left: 0%;
+      top: 50px;
+   }
+   100% {
+      margin-left: 130%;
+      top: -200px;
+   }
+}
+
+.anim {
+   height: 1000px;
+   width: 1400px;
+   overflow: hidden;
+   position: relative;
+   margin: 0 auto;
+}
+
+.box_9 {
+   animation: anim__taxi 5s linear forwards;
+}
+
+.box_3, .box_4, .box_5, .box_6 {
+   animation: anim__cars 12s linear infinite;
+}
+
+.box_1-1, .box_1-2, .box_1-3, .box_1-4, .box_1-5, .box_1-6 {
+   animation: anim__clouds 12s linear infinite;
+}
+
+.box_16 {
+   animation: anim__handwoman 2s ease forwards;
+}
+
+.box_12, .box_14, .box_10, .box_18 {
+   opacity: 0;
+   animation-duration: 10s;
+   animation-name: anim__message;
+   animation-iteration-count: 1;
+   animation-fill-mode: forwards;
+}
+
+.box_17 {
+   animation: anim__handman 2s ease forwards;
+}
+
+.box_20 {
+   animation: anim__fly 7s ease forwards;
+}
+
+.anim__cars {
+   position: relative;
+   height: 125px;
+   width: 100%;
+   margin-left: -300px;
+   top: 300px;
+}
+
+.anim__clouds {
+   position: relative;
+   height: 135px;
+   width: 100%;
+   margin-left: -300px;
+}
+
+.anim__taxi {
+   position: relative;
+   height: 98px;
+   width: 100%;
+   margin-left: -900px;
+   bottom: -346px;
+}
+
+.anim__fly {
+   position: relative;
+}
+
+.box_1-1 {
+   @extend %psevdo;
+   width: 91px;
+   height: 26px;
+   background-image: url('../img/animation/CloudsOne.png');
+   top: 0;
+   animation-delay: 0
+}
+
+.box_1-2 {
+   @extend %psevdo;
+   width: 186px;
+   height: 38px;
+   background-image: url('../img/animation/CloudsTwo.png');
+   top: 40px;
+   animation-delay: 2s
+}
+
+.box_1-3 {
+   @extend %psevdo;
+   width: 155px;
+   height: 32px;
+   background-image: url('../img/animation/CloudsThree.png');
+   top: 0;
+   animation-delay: 4s
+}
+
+.box_1-4 {
+   @extend %psevdo;
+   width: 201px;
+   height: 41px;
+   background-image: url('../img/animation/CloudsFour.png');
+   top: 80px;
+   animation-delay: 6s
+}
+
+.box_1-5 {
+   @extend %psevdo;
+   width: 91px;
+   height: 26px;
+   background-image: url('../img/animation/CloudFive.png');
+   top: 40px;
+   animation-delay: 8s
+}
+
+.box_1-6 {
+   @extend %psevdo;
+   width: 164px;
+   height: 34px;
+   background-image: url('../img/animation/CloudsSix.png');
+   top: 60px;
+   animation-delay: 10s
+}
+
+.box_1-7 {
+   @extend %psevdo;
+   width: 59px;
+   height: 59px;
+   right: 300px;
+   top: 0;
+   background-color: yellow;
+   border-radius: 37px;
+}
+
+.box_2 {
+   @extend %psevdo;
+   width: 1585px;
+   height: 630px;
+   background-image: url('../img/animation/haus.jpg');
+   left: -150px;
+   top: 150px;
+}
+
+.box_3 {
+   @extend %psevdo;
+   width: 268px;
+   height: 125px;
+   background-image: url('../img/animation/Car\ four.png');
+   top: -22px;
+   animation-delay: 0
+}
+
+.box_4 {
+   @extend %psevdo;
+   width: 246px;
+   height: 65px;
+   background-image: url('../img/animation/Car\ three.png');
+   top: 45px;
+   animation-delay: 3s
+}
+
+.box_5 {
+   @extend %psevdo;
+   width: 203px;
+   height: 95px;
+   background-image: url('../img/animation/Car\ two.png');
+   top: 0;
+   animation-delay: 6s
+}
+
+.box_6 {
+   @extend %psevdo;
+   width: 250px;
+   height: 99px;
+   background-image: url('../img/animation/Car\ one.png');
+   top: 0;
+   animation-delay: 9s
+}
+
+.box_7 {
+   @extend %psevdo;
+   width: 150px;
+   height: 395px;
+   background-image: url('../img/animation/LanternsNO.png');
+   left: 315px;
+   top: 196px;
+}
+
+.box_8 {
+   @extend %psevdo;
+   width: 150px;
+   height: 395px;
+   background-image: url('../img/animation/LanternsNO.png');
+   right: 195px;
+   top: 196px;
+}
+
+.box_9 {
+   @extend %psevdo;
+   width: 886px;
+   height: 265px;
+   background-image: url('../img/animation/Taxi.png');
+   bottom: 0;
+   animation-delay: 5s
+}
+
+.box_10 {
+   @extend %psevdo;
+   width: 160px;
+   height: 99px;
+   background-image: url('../img/animation/TaxiMessage.png');
+   right: 580px;
+   top: 355px;
+   animation-delay: 8s
+   
+}
+
+.box_11 {
+   @extend %psevdo;
+   width: 98px;
+   height: 267px;
+   background-image: url('../img/animation/WomanBody.png');
+   left: 82px;
+   bottom: 223px;
+}
+
+.box_12 {
+   @extend %psevdo;
+   width: 160px;
+   height: 99px;
+   background-image: url('../img/animation/WomanMessage.png');
+   left: -1px;
+   bottom: 504px;
+   animation-delay: 2s
+}
+
+.box_13 {
+   @extend %psevdo;
+   width: 205px;
+   height: 352px;
+   background-image: url('../img/animation/ManBody.png');
+   left: 196px;
+   bottom: 222px;
+}
+
+.box_14 {
+   @extend %psevdo;
+   width: 160px;
+   height: 77px;
+   background-image: url('../img/animation/ManMessage.png');
+   left: 180px;
+   bottom: 580px;
+   animation-delay: 4s;
+}
+
+.box_15 {
+   @extend %psevdo;
+   width: 191px;
+   height: 95px;
+   background-image: url('../img/animation/WomanSuitcases.png');
+   left: 75px;
+   bottom: 222px;
+}
+
+.box_16 {
+   @extend %psevdo;
+   width: 62px;
+   height: 43px;
+   background-image: url('../img/animation/WomanHand.png');
+   left: 112px;
+   top: 607px;
+   margin: 0;
+   transform-origin: 0 0;
+   margin: 0;
+   animation-delay: 2s
+}
+
+.anim__handman {
+   position: relative;
+}
+
+.box_17 {
+   @extend %psevdo;
+   width: 88px;
+   height: 128px;
+   background-image: url('../img/animation/ManHand.png');
+   left: 225px;
+   top: 20px;
+   transform-origin: 0 100px;
+   transform: rotate(146deg);
+   margin: 0;
+   animation-delay: 4s
+}
+
+.box_18 {
+   @extend %psevdo;
+   width: 160px;
+   height: 77px;
+   background-image: url('../img/animation/ManMessageTwo.png');
+   left: 180px;
+   bottom: 580px;
+   display: flex;
+   justify-content: center;
+   padding: 17px;
+   animation-delay: 10s;
+   border: #1E0606
+}
+
+.box_19 {
+   @extend %psevdo;
+   width: 215px;
+   height: 562px;
+   background-image: url('../img/animation/LanternYes.png');
+   right: 280px;
+   bottom: 235px;
+}
+
+.box_20 {
+   @extend %psevdo;
+   width: 150px;
+   height: 97px;
+   background-image: url('../img/animation/Fly2.jpg');
+   left: -150px;
+   top: 0;
+   animation-delay: 7s;
 }

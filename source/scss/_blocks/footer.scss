@@ -2,9 +2,6 @@
   @include font;
   background: #434343;
   color: #AAAAAA;
-  // font-weight: 400;
-  // font-size: 16px;
-  // line-height: 22px;
   margin: 0 auto;
   margin-bottom: 100px;
   &__list {
@@ -37,6 +34,7 @@
     & a:active {
       text-decoration-line: underline;
       color: #FFFFFF;
+      transition: .4s;
     }
   }
   &__color {
@@ -135,8 +133,6 @@
   width: 300px;
   height: 40px;
   border: 1px solid #666666;
-  // font-size: 16px;
-  // line-height: 22px;
   color: #EBEBEB;
   padding: 9px 0px 9px 15px;
 }
@@ -144,6 +140,7 @@
 .email:hover,
 .email:active {
   border: 1px solid #FFFDFD;
+  transition: .4s;
 }
 
 .email:focus {
@@ -165,6 +162,7 @@
   }
   & a:hover {
     opacity: 50%;
+    transition: .4s;
   }
   & a:active {
     opacity: 20%;

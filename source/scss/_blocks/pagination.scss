@@ -12,7 +12,8 @@
       background-repeat: no-repeat;
       border: 0;
       background-position: center;
-      background-color: transparent
+      background-color: transparent;
+      transition: .4s;
     }
   }
 
@@ -30,30 +31,16 @@
     }
   }
   
-  // .page-numbers {
-  //   font-family: 'Montserrat';
-  //   font-weight: 700;
-  //   font-size: 16px;
-  //   line-height: 20px;
-  //   text-transform: uppercase;
-  //   color: #1E0606;
-  //   display: flex;
-  //   letter-spacing: 67px
-  // }
-  
   /*PAGINATION*/
   
   .pagination a {
     @include font(700,16px,20px);
     font-family: 'Montserrat';
-    // font-style: normal;
-    // font-weight: 700;
-    // font-size: 16px;
-    // line-height: 20px;
     text-transform: uppercase;
     margin: 32px;
     text-decoration: none;
     color: #1E0606;
+    transition: .4s;
   }
   
   .pagination a.pagination__active {
