@@ -17,19 +17,31 @@
     }
   }
 
-  .page__switching__left {
-    background-image: url('../img/page-left.svg');
+  .arrow_pagination {
+    cursor: pointer;
+    &:hover polyline {
+      stroke: rgba(194, 153, 116, 1);
+    }
+    &:active polyline {
+      opacity: .7;
+    }
   }
+
+  // .page__switching__left {
+  //   background-image: url('../img/page-left.svg');
+  // }
   
-  .page__switching__right {
-    background-image: url('../img/page-right.svg');
-    &:hover {
-      background-image: url('../img/arrowhvr.svg');
-    }
-    &:active {
-      background-image: url('../img/arrowact.svg');
-    }
-  }
+  // .page__switching__right {
+  //   background-image: url('../img/page-right.svg');
+  //   &:hover {
+  //     background-image: url('../img/arrowhvr.svg');
+  //   }
+  //   &:active {
+  //     background-image: url('../img/arrowact.svg');
+  //   }
+  // }
+
+
   
   /*PAGINATION*/
   

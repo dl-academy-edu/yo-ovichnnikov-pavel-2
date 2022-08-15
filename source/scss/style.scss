@@ -309,20 +309,23 @@
    margin-bottom: 6px;
 }
 
+/*TITLE*/
+
+.main__title {
+   @include font(700,40px,49px);
+   font-family: 'Montserrat';
+   text-transform: uppercase;
+   color: #1E0606;
+   margin-bottom: 15px;
+   letter-spacing: 1px;
+}
+
 
 /*CONTACT*/
 
 .contact {
    display: flex;
    justify-content: space-between;
-   &__title {
-      @include font(700,40px,49px);
-      font-family: 'Montserrat';
-      text-transform: uppercase;
-      color: #1E0606;
-      margin-bottom: 15px;
-      letter-spacing: 1px;
-   }
    &__form {
       width: 680px;
       background: $primary;
@@ -376,13 +379,13 @@
 /*TOYS*/
 
 .toys {
-   &__title {
-      @include font(700,40px,49px);
-      font-family: 'Montserrat';
-      text-transform: uppercase;
-      color: #1E0606;
-      margin-bottom: 15px;
-   }
+   // &__title {
+   //    @include font(700,40px,49px);
+   //    font-family: 'Montserrat';
+   //    text-transform: uppercase;
+   //    color: #1E0606;
+   //    margin-bottom: 15px;
+   // }
    &__banner {
       @include font;
       background: $primary;
@@ -556,13 +559,13 @@ input[type=range]::-webkit-slider-thumb {
 
 /*CATALOG*/
 
-.catalog__title {
-   @include font(700,40px,49px);
-   font-family: 'Montserrat';
-   text-transform: uppercase;
-   color: #1E0606;
-   margin: 0 0 15px 0;
-}
+// .catalog__title {
+//    @include font(700,40px,49px);
+//    font-family: 'Montserrat';
+//    text-transform: uppercase;
+//    color: #1E0606;
+//    margin: 0 0 15px 0;
+// }
 
 .catalog__product__title {
    @include font(700,38px,46px);
@@ -584,14 +587,14 @@ input[type=range]::-webkit-slider-thumb {
 
 /*BLOG*/
 
-.blog__title {
-   @include font(700,40px,49px);
-   font-family: 'Montserrat';
-   text-transform: uppercase;
-   color: #1E0606;
-   position: relative;
-   margin-bottom: 15px;
-}
+// .blog__title {
+//    @include font(700,40px,49px);
+//    font-family: 'Montserrat';
+//    text-transform: uppercase;
+//    color: #1E0606;
+//    position: relative;
+//    margin-bottom: 15px;
+// }
 
 .blog {
    display: flex;
@@ -727,6 +730,7 @@ input[type=range]::-webkit-slider-thumb {
    overflow: hidden;
    position: relative;
    margin: 0 auto;
+   margin-bottom: -140px;
 }
 
 .box_9 {
@@ -1005,7 +1009,7 @@ input[type=range]::-webkit-slider-thumb {
    height: 128px;
    background-image: url('../img/animation/ManHand.png');
    left: 225px;
-   top: 20px;
+   top: 35px;
    transform-origin: 0 100px;
    transform: rotate(146deg);
    margin: 0;
@@ -1044,3 +1048,364 @@ input[type=range]::-webkit-slider-thumb {
    top: 0;
    animation-delay: 7s;
 }
+
+/*SVG*/
+
+@keyframes sun {
+   0% {
+      transform: translateY(0)
+    
+   }
+   50% {
+      transform: translateY(-130px)
+     
+   }
+   100% {
+      transform: translateY(0)
+   }
+}
+
+@keyframes mountain-one {
+   0% {
+      fill: #000;
+     
+   }
+   50% {
+      fill: #5D9CEC;
+   }
+   100% {
+      fill: #000;
+   }
+}
+
+@keyframes mountain-two {
+   0% {
+      fill: #5D9CEC;
+   }
+   50% {
+      fill: #000;
+   }
+   100% {
+      fill: #5D9CEC;
+   }
+}
+
+@keyframes line-one {
+   0% {
+      transform: translateY(0)
+   }
+   25% {
+      transform: translateY(269px)
+   }
+   50% {
+      transform: translateY(269px)
+   }
+   75% {
+      transform: translateY(269px)
+   }
+   100% {
+      transform: translateY(0)
+   }
+}
+
+@keyframes line-two {
+   0% {
+      transform: translateY(0)
+   }
+   25% {
+      transform: translateY(107px)
+   }
+   50% {
+      transform: translateY(107px)
+   }
+   75% {
+      transform: translateY(107px)
+   }
+   100% {
+      transform: translateY(0)
+   }
+}
+
+@keyframes line-three {
+
+   0% {
+      transform: translateY(0)
+   }
+   25% {
+      transform: translateY(188px)
+   }
+   50% {
+      transform: translateY(188px)
+   }
+   75% {
+      transform: translateY(188px)
+   }
+   100% {
+      transform: translateY(0)
+   }
+}
+
+@keyframes line-four {
+
+   0% {
+      transform: translateX(0)
+   }
+   25% {
+      transform: translateX(150px)
+   }
+   50% {
+      transform: translateX(0)
+   }
+   75% {
+      transform: translateX(150px)
+   }
+   100% {
+      transform: translateX(0)
+   }
+}
+
+@keyframes line-five {
+
+   0% {
+      transform: translateX(0)
+   }
+   25% {
+      transform: translateX(80px)
+   }
+   50% {
+      transform: translateX(80px)
+   }
+   75% {
+      transform: translateX(80px)
+   }
+   100% {
+      transform: translateX(0)
+   }
+}
+
+@keyframes line-six {
+
+   0% {
+      transform: translateY(0)
+   }
+   25% {
+      transform: translateY(110px)
+   }
+   50% {
+      transform: translateY(110px)
+   }
+   75% {
+      transform: translateY(110px)
+   }
+   100% {
+      transform: translateY(0)
+   }
+}
+
+@keyframes line-seven {
+
+   0% {
+      transform: translateX(0)
+   }
+   25% {
+      transform: translateX(-150px)
+   }
+   50% {
+      transform: translateX(-150px)
+   }
+   75% {
+      transform: translateX(-150px)
+   }
+   100% {
+      transform: translateX(0)
+   }
+}
+
+@keyframes line-eight {
+
+   0% {
+      transform: translateY(0)
+   }
+   25% {
+      transform: translateY(108px)
+   }
+   50% {
+      transform: translateY(108px)
+   }
+   75% {
+      transform: translateY(108px)
+   }
+   100% {
+      transform: translateY(0)
+   }
+}
+
+@keyframes line-nine {
+
+   0% {
+      transform: translateY(0)
+   }
+   25% {
+      transform: translateY(-132px)
+   }
+   50% {
+      transform: translateY(-132px)
+   }
+   75% {
+      transform: translateY(-132px)
+   }
+   100% {
+      transform: translateY(0)
+   }
+}
+
+@keyframes line-ten {
+
+   0% {
+      transform: translateY(0)
+   }
+   25% {
+      transform: translateY(-81px)
+   }
+   50% {
+      transform: translateY(-81px)
+   }
+   75% {
+      transform: translateY(-81px)
+   }
+   100% {
+      transform: translateY(0)
+   }
+}
+
+@keyframes line-eleven {
+
+   0% {
+      transform: translateY(0)
+   }
+   25% {
+      transform: translateY(-134px)
+   }
+   50% {
+      transform: translateY(-134px)
+   }
+   75% {
+      transform: translateY(-134px)
+   }
+   100% {
+      transform: translateY(0)
+   }
+}
+
+@keyframes line-twelve {
+
+   0% {
+      transform: translateY(0)
+   }
+   25% {
+      transform: translateY(-240px)
+   }
+   50% {
+      transform: translateY(-240px)
+   }
+   75% {
+      transform: translateY(-240px)
+   }
+   100% {
+      transform: translateY(0)
+   }
+}
+
+@keyframes line-thirteen {
+
+   0% {
+      transform: translateY(0)
+   }
+   25% {
+      transform: translateY(-215px)
+   }
+   50% {
+      transform: translateY(-215px)
+   }
+   75% {
+      transform: translateY(-215px)
+   }
+   100% {
+      transform: translateY(0)
+   }
+}
+
+.picture {
+   margin-bottom: 60px;
+   cursor: pointer;
+}
+
+.sun {
+   animation: sun 6s linear infinite;
+}
+
+.mountain-one {
+   animation: mountain-one 6s linear infinite;
+}
+
+.mountain-two {
+   animation: mountain-two 6s linear infinite;
+}
+
+.line-one {
+   animation: line-one 8s linear infinite;
+}
+
+.line-two {
+   animation: line-two 8s linear infinite;
+}
+
+.line-three {
+   animation: line-three 8s linear infinite;
+}
+
+.line-four {
+   animation: line-four 8s linear infinite;
+}
+
+.line-five {
+   animation: line-five 8s linear infinite;
+}
+
+.line-six {
+   animation: line-six 8s linear infinite;
+}
+
+.line-seven {
+   animation: line-seven 8s linear infinite;
+}
+
+.line-nine {
+   animation: line-nine 8s linear infinite;
+}
+
+.line-eight {
+   animation: line-eight 8s linear infinite;
+}
+
+.line-ten {
+   animation: line-ten 8s linear infinite;
+}
+
+.line-eleven {
+   animation: line-eleven 8s linear infinite;
+}
+
+.line-twelve {
+   animation: line-twelve 8s linear infinite;
+}
+
+.line-thirteen {
+   animation: line-thirteen 8s linear infinite;
+}
+
+
+
+
+
+

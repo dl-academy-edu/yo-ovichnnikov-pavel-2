@@ -24,11 +24,12 @@
     border-top: 1px solid #666666;
     padding: 6px 0 100px 0;
     & p {
-      margin-right: 109px;
+      // margin-right: 109px;
     }
     & a {
       color: #A2A2A2;
       width: 380px;
+      margin-left: 110px;
     }
     & a:hover,
     & a:active {
@@ -39,7 +40,6 @@
   }
   &__color {
     color: #fff;
-    margin-right: 25px;
     & a {
       color: #fff;
       width: 380px;
@@ -59,57 +59,81 @@
 .star {
   overflow: hidden;
   display: flex;
-  flex-direction: row-reverse;
+  // flex-direction: row-reverse;
   justify-content: flex-end;
-}
-
-.star:not(:checked) > input {
-  display: none;
-}
-
-.star:not(:checked) > label {
-  width: 20px;
-  padding: 0;
   cursor: pointer;
-  color: #FFFFFF;
+  align-items: center;
+  margin-right: 170px;
+  padding-top: 0;
+  &:hover .star__rating {
+    color: #C29974;
+  }
+  &__rating {
+    margin: 0;
+    margin-right: 25px;
+    &_star-one:hover path {
+      fill: #C29974;
+    }
+    &_star-two:hover path {
+      fill: #C29974;
+    }
+    &_star-three:hover path {
+      fill: #C29974;
+    }
+    &_star-four:hover path {
+      fill: #C29974;
+    }&_star-five:hover path {
+      fill: #C29974;
+    }
+  }
+  & svg {
+    margin-right: 3px;
+  }
 }
 
-.star:not(:checked) > label:before {
-  content: '★';
-}
+// .star:not(:checked) > input {
+//   display: none;
+// }
 
-.star > input:checked ~ label,
-.star > input:checked ~ span {
-  color: #C29974;
-}
+// .star:not(:checked) > label {
+//   width: 20px;
+//   padding: 0;
+//   cursor: pointer;
+//   color: #FFFFFF;
+// }
 
-.star:not(:checked) > label:hover,
-.star:not(:checked) > label:hover ~ label,
-.star:not(:checked) > label:hover,
-.star:not(:checked) > label:hover ~ span {
-  color: #C29974;
-}
+// .star:not(:checked) > label:before {
+//   content: '★';
+// }
 
-.star > input:checked + label:hover,
-.star > input:checked + label:hover ~ label,
-.star > input:checked ~ label:hover,
-.star > input:checked ~ label:hover ~ label,
-.star > label:hover ~ input:checked ~ label {
-  color: #C29974;
-}
+// .star > input:checked ~ label,
+// .star > input:checked ~ span {
+//   color: #C29974;
+// }
 
-.star > label:active {
-  position: relative;
-}
+// .star:not(:checked) > label:hover,
+// .star:not(:checked) > label:hover ~ label,
+// .star:not(:checked) > label:hover,
+// .star:not(:checked) > label:hover ~ span {
+//   color: #C29974;
+// }
 
-.star:focus-within p {
-  color: #C29974;
-}
+// .star > input:checked + label:hover,
+// .star > input:checked + label:hover ~ label,
+// .star > input:checked ~ label:hover,
+// .star > input:checked ~ label:hover ~ label,
+// .star > label:hover ~ input:checked ~ label {
+//   color: #C29974;
+// }
 
-.star {
-  margin-right: 153px;
-  padding-top: 13px;
-}
+// .star > label:active {
+//   position: relative;
+// }
+
+// .star:focus-within p {
+//   color: #C29974;
+// }
+
 
 
 /*LINE*/
