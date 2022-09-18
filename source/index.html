@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&family=Montserrat:wght@200;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&family=Montserrat:wght@200;700&family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -44,12 +44,21 @@
                     <p class="banner__title_designed">Designed in Slovenia</p>
                     <a href="#" aria-label="explore-now" class="button btn_js">EXPLORE NOW</a>
                 </li> 
+                <li class="banner__img">
+                    <picture>
+                        <source srcset="img/krocozybra-mobile.png, img/krocozybra-mobile2x.png" media="(max-width: 380px">
+                        <source srcset="img/krocozybra-tablet.png, img/krocozybra-tablet2x.png" media="(max-width: 1170px">
+                        <source srcset="img/krocozybra.png, img/krocozybra2x.png 2x">
+                        <img class="monstr" src="img/krocozybra.png" alt="">
+                    </picture>
+                    
+                </li>
             </ul>
             <p class="banner__text">Free (continental) USA shipping on all orders of $100 USD or more!</p>
         </section>
   
         <section class="category">
-            <h2 class="category__title">Category Products</h2>
+            <h2 class="main__title">Category Products</h2>
             <ul class="category__list undotted">
 
                 @@include('blocks/category.html', {
@@ -90,7 +99,15 @@
         </div>   
             
         <section class="delivery">
-            <img src="../img/girl.jpg" alt="" class="delivery__img" width="480" height="559">
+            <!-- <img src="img/girl.jpg, img/girl2x.jpg" alt=""> -->
+            <picture>
+                <source srcset="img/girl-mobile.jpg, img/girl-mobile2x.jpg" media="(max-width: 650px">
+                <source srcset="img/girl-tablet.jpg, img/girl-tablet2x.jpg" media="(max-width: 1170px">
+                <source srcset="img/girl.jpg, img/girl2x.jpg 2x">
+                <img class="delivery__img" src="img/girl.jpg, img/girl2x.jpg" alt="">
+                <!-- <img src="../img/girl.jpg" alt="" class="delivery__img"> -->
+            </picture>
+            
             <div class="delivery__wrapper">
                 <h2 class="delivery__title">Delivery</h2>
                 <ul class="undotted delivery__wrapper__choice">
@@ -122,16 +139,38 @@
             <h2 class="hidden">Brands</h2>
             <ul class="undotted brands__list">
                 <li>
-                    <img src="../img/mailgroup.jpg" alt="" width="193" height="60">
+                    <picture>
+                        <source srcset="img/mailgroup-mobile.jpg, img/mailgroup-mobile2x.jpg" media="(max-width: 650px">
+                        <source srcset="img/mailgroup-tablet.jpg, img/mailgroup-tablet2x.jpg" media="(max-width: 1170px">
+                        <source srcset="img/mailgroup.jpg, img/mailgroup2x.jpg 2x">
+                        <img src="img/mailgroup.jpg, img/mailgroup2x.jpg" alt="">
+                    </picture>
+
+                    <!-- <img src="../img/mailgroup.jpg" alt=""> -->
                 </li>
                 <li>
-                    <img src="../img/apple.jpg" alt="" width="179" height="61">
+                    <picture>
+                        <source srcset="img/apple-mobile.jpg, img/apple-mobile2x.jpg" media="(max-width: 650px">
+                        <source srcset="img/apple-tablet.jpg, img/apple-tablet2x.jpg" media="(max-width: 1170px">
+                        <source srcset="img/apple.jpg, img/apple2x.jpg 2x">
+                        <img src="img/apple.jpg, img/apple2x.jpg" alt="">
+                    </picture>
                 </li>
                 <li>
-                    <img src="../img/eltex.jpg" alt="" width="216" height="46">
+                    <picture>
+                        <source srcset="img/eltex-mobile.jpg, img/eltex-mobile2x.jpg" media="(max-width: 650px">
+                        <source srcset="img/eltex-tablet.jpg, img/eltex-tablet2x.jpg" media="(max-width: 1170px">
+                        <source srcset="img/eltex.jpg, img/eltex2x.jpg 2x">
+                        <img src="img/eltex.jpg, img/eltex2x.jpg" alt="">
+                    </picture>
                 </li>
                 <li>
-                    <img src="../img/owox1.jpg" alt="" width="211" height="40">
+                    <picture>
+                        <source srcset="img/owox-mobile.jpg, img/owox-mobile2x.jpg" media="(max-width: 650px">
+                        <source srcset="img/owox-tablet.jpg, img/owox-tablet2x.jpg" media="(max-width: 1170px">
+                        <source srcset="img/owox.jpg, img/owox2x.jpg 2x">
+                        <img src="img/owox.jpg, img/owox2x.jpg" alt="">
+                    </picture>
                 </li>
             </ul>
         </section>
@@ -146,8 +185,7 @@
             <div class="about__list">
                 <h2 class="about__title">Contacts</h2>
                     <p>Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply magical.</p>
-                    <!-- <p><img src="images/maps.jpg" class="map" alt="" width="483" height="196"></p> -->
-                    <iframe aria-label="map" class="map" src="https://yandex.ru/map-widget/v1/?um=constructor%3A98d614c780df4e5d0b60de6b04b9b46736ffb4f170f9bae3b75a537164323823&amp;source=constructor" width="483" height="196"></iframe>
+                    <iframe aria-label="map" class="map" src="https://yandex.ru/map-widget/v1/?um=constructor%3A98d614c780df4e5d0b60de6b04b9b46736ffb4f170f9bae3b75a537164323823&amp;source=constructor" ></iframe>
             </div>
         </section>
     </main>

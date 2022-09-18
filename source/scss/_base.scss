@@ -61,6 +61,11 @@ a {
     background: #C7C1C1;
     cursor: none;
   }
+
+  @media screen and (max-width: 376px) {
+    font-size: 14px;
+    line-height: 19px;
+  }
 }
 
 /*CRUMBS*/
@@ -68,6 +73,15 @@ a {
 .breadcrumbs {
   display: flex;
   margin-bottom: 50px;
+
+  @media screen and (max-width: 900px) {
+    margin-bottom: 30px;
+  }
+
+  @media screen and (max-width: 581px) {
+    padding: 0 20px;
+    margin-bottom: 20px;
+  }
 }
 
 .breadcrumbs__link,
@@ -76,6 +90,12 @@ a {
   font-family: 'Crimson Text';
   font-style: italic;
   color: #1E0606;
+
+  @media screen and (max-width: 581px) {
+    font-size: 16px;
+    line-height: 21px;
+
+  }
 }
 
 .breadcrumbs__link {
@@ -90,6 +110,10 @@ a {
   height: 12px;
   top: 8px;
   right: -28px;
+
+  @media screen and (max-width: 581px) {
+    top: 4px;
+  }
 }
 
 .breadcrumbs p {
@@ -119,6 +143,17 @@ textarea {
   resize: none;
   outline: none;
   transition: .4s;
+
+  @media screen and (max-width: 1170px) {
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  @media screen and (max-width: 720px) {
+    font-size: 14px;
+    line-height: 16px;
+  }
+
   &:focus,
   &:hover {
     border-color: #C29974;
