@@ -5,9 +5,6 @@
 body {
   @include font;
   font-family: 'Open Sans', 'Arial', sans-serif;
-  // font-weight: 400;
-  // font-size: 16px;
-  // line-height: 22px;
   color: #1E0606;
 }
 
@@ -46,9 +43,6 @@ a {
   @include font(700);
   background: #000000;
   color: #FFFFFF;
-  // font-weight: 700;
-  // font-size: 16px;
-  // line-height: 22px;
   text-transform: uppercase;
   display: inline-block;
   text-align: center;
@@ -56,6 +50,7 @@ a {
   border: none;
   cursor: pointer;
   letter-spacing: 0.5px;
+  transition: .4s;
   &:hover {
     background: #C29974;
   }
@@ -66,6 +61,11 @@ a {
     background: #C7C1C1;
     cursor: none;
   }
+
+  @media screen and (max-width: 376px) {
+    font-size: 14px;
+    line-height: 19px;
+  }
 }
 
 /*CRUMBS*/
@@ -73,6 +73,15 @@ a {
 .breadcrumbs {
   display: flex;
   margin-bottom: 50px;
+
+  @media screen and (max-width: 900px) {
+    margin-bottom: 30px;
+  }
+
+  @media screen and (max-width: 581px) {
+    padding: 0 20px;
+    margin-bottom: 20px;
+  }
 }
 
 .breadcrumbs__link,
@@ -80,10 +89,13 @@ a {
   @include font(400,20px,26px);
   font-family: 'Crimson Text';
   font-style: italic;
-  // font-weight: 400;
-  // font-size: 20px;
-  // line-height: 26px;
   color: #1E0606;
+
+  @media screen and (max-width: 581px) {
+    font-size: 16px;
+    line-height: 21px;
+
+  }
 }
 
 .breadcrumbs__link {
@@ -98,6 +110,10 @@ a {
   height: 12px;
   top: 8px;
   right: -28px;
+
+  @media screen and (max-width: 581px) {
+    top: 4px;
+  }
 }
 
 .breadcrumbs p {
@@ -109,8 +125,6 @@ a {
 
 label {
   @include font;
-  // font-size: 16px;
-  // line-height: 22px;
   color: #1E0606;
   margin-bottom: 16px;
 }
@@ -124,13 +138,24 @@ textarea {
   @include font(400,18px,25px);
   background: #FFFFFF;
   border: 1px solid #C7C1C1;
-  // font-size: 18px;
-  // line-height: 25px;
   color: #1E0606;
   padding: 14px 20px;
   resize: none;
   outline: none;
-  &:focus {
+  transition: .4s;
+
+  @media screen and (max-width: 1170px) {
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  @media screen and (max-width: 720px) {
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  &:focus,
+  &:hover {
     border-color: #C29974;
   }
   &:disabled {
@@ -138,17 +163,6 @@ textarea {
     border-color: #EBEBEB;
   }
 }
-
-// input:focus,
-// textarea:focus {
-//   border-color: #C29974;
-// }
-
-// input:disabled,
-// textarea:disabled {
-//   opacity: .5;
-//   border-color: #EBEBEB;
-// }
 
 textarea {
   max-height: 150px;
@@ -245,8 +259,6 @@ fieldset {
   width: 80px;
   height: 35px;
   background: #FFFFFF;
-  // font-size: 16px;
-  // line-height: 22px;
   color: #1E0606;
 }
 
@@ -257,6 +269,7 @@ fieldset {
 .toys_input:hover + label {
   background: #EDDEEB;
   color: #877379;
+  transition: .4s;
 }
 
 

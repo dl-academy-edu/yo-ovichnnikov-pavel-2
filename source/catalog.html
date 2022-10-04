@@ -20,7 +20,7 @@
 
     <main class="container">
         <section>
-            <h1 class="catalog__title">Category Products</h1>
+            <h1 class="main__title">Category Products</h1>
                 <div>
                     <ul class="undotted breadcrumbs">
                         <li>
@@ -31,7 +31,7 @@
                         </li>
                     </ul>
                 </div>
-                <div>
+                <div class="category">
                     <ul class="undotted category__list">
                         
                         @@include('blocks/category.html', {
@@ -57,7 +57,7 @@
 
                     </ul>
                 </div>
-                <div>
+                <div class="category">
                     <ul class="undotted category__list_2">
         
                         @@include('blocks/category.html', {
@@ -94,5 +94,6 @@
 
     @@include('blocks/footer.html')
 
+    <script src="js/menu.js"></script>
 </body>
 </html>

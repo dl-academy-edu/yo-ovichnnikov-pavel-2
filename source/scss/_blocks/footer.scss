@@ -2,49 +2,96 @@
   @include font;
   background: #434343;
   color: #AAAAAA;
-  // font-weight: 400;
-  // font-size: 16px;
-  // line-height: 22px;
   margin: 0 auto;
-  margin-bottom: 100px;
+
   &__list {
     display: flex;
     align-items: flex-start;
     flex-direction: row;
     justify-content: space-between;
     padding: 83px 0 0 0;
+
+    @media screen and (max-width: 580px) {
+      padding: 70px 20px 60px;
+    }
+
     & li {
       margin-bottom: 15px;
     }
+
+    @media screen and (max-width: 680px) {
+      flex-direction: column;
+    }
   }
+
   & nav,
   & form {
     padding-top: 11px;
   }
+
   &__down {
     display: flex;
     align-items: center;
     border-top: 1px solid #666666;
-    padding: 6px 0 100px 0;
-    & p {
-      margin-right: 109px;
+    padding-bottom: 100px;
+  
+    @media screen and (max-width: 1170px) {
+      flex-wrap: wrap;
     }
+
+    @media screen and (max-width: 610px) {
+      padding: 0 20px 70px 20px;
+    }
+    
+
     & a {
       color: #A2A2A2;
       width: 380px;
+      margin-left: 110px;
+
+      @media screen and (max-width: 1170px) {
+        margin-left: 45px;
+      }
+
+      @media screen and (max-width: 1160px) {
+        margin: 0;
+      }
+
+      @media screen and (max-width: 778px) {
+        margin-left: 43px;
+        width: 300px;
+      }
+
+      @media screen and (max-width: 764px) {
+        margin-left: 0;
+        margin-right: 10px;
+      }
+
     }
     & a:hover,
     & a:active {
       text-decoration-line: underline;
       color: #FFFFFF;
+      transition: .4s;
     }
   }
   &__color {
     color: #fff;
-    margin-right: 25px;
+
+    @media screen and (max-width: 680px) {
+      display: flex;
+      justify-content: space-between;
+    }
+
     & a {
       color: #fff;
       width: 380px;
+
+      @media screen and (max-width: 580px) {
+        font-size: 14px;
+        line-height: 19px;
+      }
+
     }
     & a:hover {
       opacity: 50%;
@@ -61,57 +108,95 @@
 .star {
   overflow: hidden;
   display: flex;
-  flex-direction: row-reverse;
   justify-content: flex-end;
-}
-
-.star:not(:checked) > input {
-  display: none;
-}
-
-.star:not(:checked) > label {
-  width: 20px;
-  padding: 0;
   cursor: pointer;
-  color: #FFFFFF;
+  align-items: center;
+  margin-right: 170px;
+  padding-top: 0;
+  &:hover .star__rating {
+    color: #C29974;
+  }
+
+  @media screen and (max-width: 1170px) {
+    margin-right: 100px;
+  }
+
+  @media screen and (max-width: 778px) {
+    margin-right: 261px;
+    margin-top: 23px;
+  }
+
+  @media screen and (max-width: 530px) {
+    margin: 24px 0 0 0;
+  }
+
+  &__rating {
+    margin: 0;
+    margin-right: 25px;
+    &_star-one:hover path {
+      fill: #C29974;
+    }
+    &_star-two:hover path {
+      fill: #C29974;
+    }
+    &_star-three:hover path {
+      fill: #C29974;
+    }
+    &_star-four:hover path {
+      fill: #C29974;
+    }
+    &_star-five:hover path {
+      fill: #C29974;
+    }
+  }
+  & svg {
+    margin-right: 3px;
+  }
 }
 
-.star:not(:checked) > label:before {
-  content: '★';
-}
+// .star:not(:checked) > input {
+//   display: none;
+// }
 
-.star > input:checked ~ label,
-.star > input:checked ~ span {
-  color: #C29974;
-}
+// .star:not(:checked) > label {
+//   width: 20px;
+//   padding: 0;
+//   cursor: pointer;
+//   color: #FFFFFF;
+// }
 
-.star:not(:checked) > label:hover,
-.star:not(:checked) > label:hover ~ label,
-.star:not(:checked) > label:hover,
-.star:not(:checked) > label:hover ~ span {
-  color: #C29974;
-}
+// .star:not(:checked) > label:before {
+//   content: '★';
+// }
 
-.star > input:checked + label:hover,
-.star > input:checked + label:hover ~ label,
-.star > input:checked ~ label:hover,
-.star > input:checked ~ label:hover ~ label,
-.star > label:hover ~ input:checked ~ label {
-  color: #C29974;
-}
+// .star > input:checked ~ label,
+// .star > input:checked ~ span {
+//   color: #C29974;
+// }
 
-.star > label:active {
-  position: relative;
-}
+// .star:not(:checked) > label:hover,
+// .star:not(:checked) > label:hover ~ label,
+// .star:not(:checked) > label:hover,
+// .star:not(:checked) > label:hover ~ span {
+//   color: #C29974;
+// }
 
-.star:focus-within p {
-  color: #C29974;
-}
+// .star > input:checked + label:hover,
+// .star > input:checked + label:hover ~ label,
+// .star > input:checked ~ label:hover,
+// .star > input:checked ~ label:hover ~ label,
+// .star > label:hover ~ input:checked ~ label {
+//   color: #C29974;
+// }
 
-.star {
-  margin-right: 153px;
-  padding-top: 13px;
-}
+// .star > label:active {
+//   position: relative;
+// }
+
+// .star:focus-within p {
+//   color: #C29974;
+// }
+
 
 
 /*LINE*/
@@ -120,6 +205,22 @@
   border-bottom: 1px solid #666666;
   width: 380px;
   padding-bottom: 22px;
+
+  @media screen and (max-width: 1170px) {
+    width: 320px;
+  }
+
+  @media screen and (max-width: 1145px) {
+    width: 250px;
+  }
+
+  @media screen and (max-width: 990px) {
+    width: 203px;
+  }
+
+  @media screen and (max-width: 680px) {
+    width: 335px;
+  }
 }
 
 
@@ -132,18 +233,29 @@
 .email {
   @include font;
   background-color: #666666;
-  width: 300px;
+  width: 100%;
   height: 40px;
   border: 1px solid #666666;
-  // font-size: 16px;
-  // line-height: 22px;
   color: #EBEBEB;
   padding: 9px 0px 9px 15px;
+
+  @media screen and (max-width: 1170px) {
+    max-width: 60%;
+  }
+
+  @media screen and (max-width: 850px) {
+    max-width: 50%;
+  }
+
+  @media screen and (max-width: 680px) {
+    max-width: 260px;
+  }
 }
 
 .email:hover,
 .email:active {
   border: 1px solid #FFFDFD;
+  transition: .4s;
 }
 
 .email:focus {
@@ -159,13 +271,17 @@
 
 .networks {
   display: flex;
+
   & li {
     margin-top: 23px;
     margin-right: 10px;
   }
+
   & a:hover {
     opacity: 50%;
+    transition: .4s;
   }
+  
   & a:active {
     opacity: 20%;
   }

@@ -15,11 +15,12 @@
 </head>
 
 <body>
+
     @@include('blocks/header.html')
 
     <main>
         <section class="container toys">
-            <h1 class="toys__title">Toy for kids</h1>
+            <h1 class="main__title">Toy for kids</h1>
             <div>
                 <ul class="undotted breadcrumbs">
                     <li>
@@ -114,42 +115,74 @@
                 <ul class="undotted products">
                     <li class="toys__item" data-tooltip="LEARN MORE">
                         <a href="#">
-                            <img src="./img/toys/toys1.jpg" alt="" width="380" height="385">
+                            <picture>
+                                <source srcset="./img/toys/toys1-mobile.jpg, ./img/toys/toys1-mobile2x.jpg" media="(max-width: 410px">
+                                <source srcset="./img/toys/toys1-tablet.jpg, ./img/toys/toys1-tablet2x.jpg" media="(max-width: 1050px">
+                                <source srcset="./img/toys/toys1.jpg, ./img/toys/toys12x.jpg 2x">
+                                <img src="./img/toys/toys1.jpg" alt="">
+                            </picture>
+                            
                             <h2>SHARKY BEAN BAG CHAIR COVER</h2>
                             <p>$60.00 USD</p>
                         </a>
                     </li>
                     <li class="toys__item" data-tooltip="LEARN MORE">
                         <a href="#">
-                            <img src="./img/toys/toys2.jpg" alt="" width="380" height="385">
+                            <picture>
+                                <source srcset="./img/toys/toys2-mobile.jpg, ./img/toys/toys2-mobile2x.jpg" media="(max-width: 410px">
+                                <source srcset="./img/toys/toys2-tablet.jpg, ./img/toys/toys2-tablet2x.jpg" media="(max-width: 1050px">
+                                <source srcset="./img/toys/toys2.jpg, ./img/toys/toys22x.jpg 2x">
+                                <img src="./img/toys/toys2.jpg" alt="">
+                            </picture>
+                            
                             <h2>BRASS DECO FRAMES</h2>
                             <p>$66.00 USD</p>
                         </a>
                     </li>
                     <li class="toys__item" data-tooltip="LEARN MORE">
                         <a href="#">
-                            <img src="./img/toys/toys3.jpg" alt="" width="380" height="385">
+                            <picture>
+                                <source srcset="./img/toys/toys3-mobile.jpg, ./img/toys/toys3-mobile2x.jpg" media="(max-width: 410px">
+                                <source srcset="./img/toys/toys3-tablet.jpg, ./img/toys/toys3-tablet2x.jpg" media="(max-width: 1050px">
+                                <source srcset="./img/toys/toys3.jpg, ./img/toys/toys32x.jpg 2x">
+                                <img src="./img/toys/toys3.jpg" alt="">
+                            </picture>
                             <h2>CIBO FULL APRON</h2>
                             <p>$60.00 USD</p>
                         </a>
                     </li>
                     <li class="toys__item" data-tooltip="LEARN MORE">
                         <a href="#">
-                            <img src="./img/toys/toys4.jpg" alt="" width="380" height="385">
+                            <picture>
+                                <source srcset="./img/toys/toys4-mobile.jpg, ./img/toys/toys4-mobile2x.jpg" media="(max-width: 410px">
+                                <source srcset="./img/toys/toys4-tablet.jpg, ./img/toys/toys4-tablet2x.jpg" media="(max-width: 1050px">
+                                <source srcset="./img/toys/toys4.jpg, ./img/toys/toys42x.jpg 2x">
+                                <img src="./img/toys/toys4.jpg" alt="">
+                            </picture>
                             <h2>GATCHA GATCHA GUMBALL MACHINE</h2>
                             <p>$56.00 USD</p>
                         </a>
                     </li>
                     <li class="toys__item" data-tooltip="LEARN MORE">
                         <a href="#">
-                            <img src="./img/toys/toys5.jpg" alt="" width="380" height="385">
+                            <picture>
+                                <source srcset="./img/toys/toys5-mobile.jpg, ./img/toys/toys5-mobile2x.jpg" media="(max-width: 410px">
+                                <source srcset="./img/toys/toys5-tablet.jpg, ./img/toys/toys5-tablet2x.jpg" media="(max-width: 1050px">
+                                <source srcset="./img/toys/toys5.jpg, ./img/toys/toys52x.jpg 2x">
+                                <img src="./img/toys/toys5.jpg" alt="">
+                            </picture>
                             <h2>CHRISTMAS ADVENT SCENTED CANDLE</h2>
                             <p>$29.00 USD</p>
                         </a>
                     </li>
                     <li class="toys__item" data-tooltip="LEARN MORE">
                         <a href="#">
-                            <img src="./img/toys/toys6.jpg" alt="" width="380" height="382">
+                            <picture>
+                                <source srcset="./img/toys/toys6-mobile.jpg, ./img/toys/toys6-mobile2x.jpg" media="(max-width: 410px">
+                                <source srcset="./img/toys/toys6-tablet.jpg, ./img/toys/toys6-tablet2x.jpg" media="(max-width: 1050px">
+                                <source srcset="./img/toys/toys6.jpg, ./img/toys/toys62x.jpg 2x">
+                                <img src="./img/toys/toys6.jpg" alt="">
+                            </picture>
                             <h2>TANGLE SPINNING TEA LIGHT</h2>
                             <p>$56.00 USD</p>
                         </a>
@@ -163,4 +196,8 @@
     </main>
 
     @@include('blocks/footer.html')
+
+    <script src="js/grid.js"></script>
 </body>
+
+</html>
